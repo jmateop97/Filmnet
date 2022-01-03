@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="JavaScript/myScript.js"></script>
+</head>
+<body>
+
+    <div id="slideFondo"></div>
+    <header>
+        <div class="desplegableHeader">
+            <input type="image" src="css/align-justify-solid.svg"class="logoDesplegableHeader" onclick="desplegar()"/>
+            <div id="listaHeader">
+                <a href="Index.html"><img class="iconoMPeliculas" src="css/Logo.PNG"> Inicio</a>
+
+                <a href="Novedades.html"> <img class="iconoMPeliculas" src="css/Novedades_Lista_Header.svg">Novedades</a>
+
+                <a href="Mis_Peliculas.html"> <img class="iconoMPeliculas" src="css/heart-solid.svg"> Mis Películas</a>
+
+                <a href="Cuenta.html"><img class="iconoMPeliculas" src="css/user-circle-solid.svg">Cuenta</a>
+
+            </div>
+        </div>
+            
+
+        <div id="Logo">
+            <a href="Index.html">
+                <img src="css/Logo.PNG" alt=""> 
+            </a>
+            <a href="Index.html">
+                <h1 class="logoTexto"> FILMNET</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="Index.html" class="headerActive">Inicio</a>
+            <a href="Novedades.html" >Novedades</a>
+            <a href="Mis_Peliculas.html" >Mis Películas</a>
+            <a href="Explorar.html" >Explorar</a>
+            <a href="" >Listas</a>
+            <a href=""class="lupa"><img src="css/search-solid.svg" alt=""></a>
+            <a href="Cuenta.html" class="user"class="headerActive"><img src="css/user-circle-solid.svg" alt=""></a>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="Cuenta">
+
+            <section class="opciones">
+                <h1>Opciones</h1>
+                <ul>
+                    <a href="" class="active"><li>Mi Cuenta</li></a>
+                    <a href=""><li>Métodos de Pago</li></a>
+                    <a href=""><li>Ajustes de Video</li></a>
+                    <a href=""><li>Ajustes de Audio</li></a>
+                </ul>
+            </section>
+
+            <section class="ajustesCuenta">
+                <h4>jesusmp97</h4>
+                <div class="imagenPerfil">
+                    <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/05/john-wick-2339245.jpg?itok=xjuRi9i7" alt="">
+                </div>
+                
+                <hr>
+                  <form class="datosPersonales">
+
+                        <div class="nombreFormulario">
+                            <p class="fname">Nombre:</p><br>
+                            <input type="text" name="nombre" placeholder="Escriba su nombre"><br>
+                        </div>
+
+                        <div class="apellidoFormulario">
+                            <p class="fname">Apellido:</p><br>
+                            <input type="text" id="lmname" name="fname" placeholder="Escriba su apellido"><br>
+                        </div>
+
+                  </form>
+
+                <hr>
+                    
+                <form class="datosPersonales">
+
+                    <div class="nombreFormulario">
+                        <p class="fname">Correo Electrónico:</p><br>
+                        <input type="email" name="nombre" placeholder="Escriba su correo"><br>
+                    </div>
+
+                    <div class="apellidoFormulario">
+                        <p class="fname">Teléfono:</p><br>
+                        <input type="tel" id="lmname" name="fname" placeholder="Escriba su teléfono"><br>
+                    </div>
+
+              </form>
+
+              <hr>
+
+              <div class="botonesCuenta">
+                <button class="botonCuenta1">Actualizar</button>
+                <button class="botonCuenta2">Borrar</button>
+             </div>
+
+            </section>
+        </section>
+      </main>
+    </body>
+</html>
