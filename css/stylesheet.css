@@ -1,0 +1,2494 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@font-face {
+    font-family: 'Babak';
+    src: url( );
+  }
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+
+
+@keyframes slide{
+    0% {
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(fondoJoker.jpg);
+    }
+   
+    14%{
+        background-image: linear-gradient(transparent, #131938 100%), url(fondoPulpFiction.jpg);
+                      
+    }
+
+    28% {
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(John\ Wick.jpg);
+    }
+
+    42% {
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(fondoDrive.jpg);
+    }
+
+    56% {
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(fondoKillBill.png);
+    }
+
+    70% {
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(fondoMadMax.jpg);
+    }
+
+    84% {
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(fondoTarantino.jpg);
+    }
+  }
+
+  .volverArriba{
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    z-index: 50;
+    top: 85%;
+    left: 93%;
+    background-color: rgb(45 46 48);
+    border-radius: 100%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 10px 10px, rgb(0 0 0 / 19%) 0px 6px 10px 0px;
+  }
+
+
+  .volverArriba img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+    margin: 15px 15px;
+    
+  }
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(fondoJoker.jpg);
+    position: absolute;
+    z-index: 1;               
+    background-size: cover;
+    background-attachment:fixed;
+    backface-visibility: hidden;
+    animation: slide 70s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:rgb(19, 25, 56); 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(109, 109, 109)
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255); 
+  }
+
+header{
+    width: 100vw;
+    display: inline-flex;
+    background-color: rgb(19, 25, 56);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    z-index: 12;
+}
+
+
+
+
+header nav{
+    width: 90%;
+    display: flex;
+    margin: 0% 0% 0% 0%;
+}
+
+
+header  nav a{
+    margin: 0% 1%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    text-decoration: underline rgb(201, 226, 255) 2.5px;
+    
+}
+
+.headerActive{
+    text-decoration: underline rgb(201, 226, 255) 2.5px;
+}
+
+#Logo {
+    width: fit-content;
+    height: fit-content;
+    display: inline-flex;
+    float: left;
+    text-decoration: none;
+    margin: 0.45% 2% 0% 2%;
+}
+
+#Logo a{
+    text-decoration: none;
+}
+
+.logoTexto{
+    font-family: 'Montserrat';
+    font-size: 1.3vw;
+    color: white;
+    margin: 3% 0% 0% 6%;
+}
+
+#Logo img{
+    height: 2vw;
+    width: 2vw;
+    margin: -3% 0%;
+}
+
+.lupa{
+    width: 25px;
+    height: 25px;
+    margin: 0.75% 1% 0% 55%;
+}
+
+.lupa img{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+    
+}
+
+.user{
+    width: 25px;
+    height: 25px;
+    margin-left: 5%;
+    margin-top: 0.75%;
+}
+
+.user img{
+    filter: brightness(0) invert(1);
+}
+
+.desplegableHeader{
+    display: none;
+    position: relative;
+    width: 3%;
+}
+
+.desplegableHeader button{
+    background-image: url(align-justify-solid.svg);
+}
+
+#listaHeader{
+    font-family: 'Montserrat';
+    background-color: rgb(19,25,56);
+    display: none;
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    border: 1px solid;
+    z-index: 10;
+    margin: 1vh 0% 0% -2vw;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+#listaHeader a{
+    display: flex;
+    padding: 0%;
+    color: white;
+    text-align: left;
+    padding: 5% 5%;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 20%), 0 2px 1px 0 rgb(255 255 255 / 19%);
+    
+}
+
+.logoDesplegableHeader{
+    
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+    margin: -17% 0% 0% 50%;
+}
+
+.logoDesplegableHeader:active {
+
+  }
+
+
+/*---------------*/
+
+
+/*Clase recomendación*/
+
+#recomendacion{
+    
+    width: 100%;
+    height: 93vh;
+}
+/*----------------------------------------------------------------SLIDER-----------------------------------------------------------------------------------------------*/
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:rgb(255, 255, 255);
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+#slide1{
+    background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(https://images.hdqwalls.com/download/2021-dune-movie-8k-ft-1920x1080.jpg);
+    background-position: center;
+}
+
+#slide2{
+    background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(https://images3.alphacoders.com/117/1176322.jpg);
+    background-position: center;
+}
+
+#slide3{
+    background-image: linear-gradient(transparent, rgb(19, 25, 56) 100%), url(james-bond-sense-temps-de-morir-fons-de-pantalla-1920x1080_48.jpg);
+    background-position: center;
+}
+
+
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.botonesSlider{
+    width: 7%;
+    position: absolute;
+    margin: -5%;
+    margin-left: 47%;
+}
+
+.botonesSlider a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin: 0% 3%;
+  }
+
+  .botonesSlider a:active{
+    background-color:rgb(19, 25, 56) ;
+  }
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.descripcionPeliPortada{
+   width: 90%;
+   margin-top: 10%;
+   margin-left: 10%;
+}
+
+.tituloPortada{
+    display: block;
+    font-size: 600%;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: white;
+}
+
+.añoGenDur{
+    display: -webkit-box;
+}
+
+.añoGenDur p{
+    margin: 2% 1%;
+    font-size: 100%;
+    font-family: 'Montserrat';
+    color: white;
+    text-align: justify;
+}
+
+.añoGenDur p a{
+    color: white;
+    text-decoration: none;
+}
+
+.descripcionPeliPortada button{
+    z-index: 2;
+    display: inline-block;
+}
+
+
+
+.botonPortada1{
+    position: absolute;
+    width: 10%;
+    padding: 1% 1.5%;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 2%;
+    text-align: center;
+    font-size: larger;
+    background-color:rgb(19, 25, 56);
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+
+}   
+
+.botonPortada2{
+    position: absolute;
+    width: 10%;
+    padding: 1% 1.5%;
+    margin-top: 2%;
+    margin-left: 13%;
+    margin-right: 2%;
+    text-align: center;
+    font-size: larger;
+    background-color:transparent;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+}
+
+
+
+.botonPortada1:hover{
+    
+    background-color: white;
+    color: rgb(19, 25, 56);
+}
+
+.botonPortada2:hover{
+    
+    background-color: white;
+    color: rgb(19, 25, 56);
+}
+
+/*---------------------
+
+/*Clase Título*/
+
+#titulo{
+    position: relative;
+    color:white;
+    font-family:'Roboto';
+    font-size: 500%;
+    width: auto;
+}
+/*--------------------------
+
+/*Clase ListaPeliculas*/
+#listaPeliculas{
+    width: 85vw;
+    margin-left: 7vw;
+    
+}
+#listaPeliculas section{
+    padding-top: 10vh;
+    display: inline-block;
+    margin-left: 5vw;
+}
+#listaPeliculas section  a img{
+    width: 15vw;
+    height: 40vh;
+}
+
+#listaPeliculas section p {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding-top: 2vh;
+}
+/*-------------------------*/
+
+/* Clase Banner 1*/
+#banner1{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgb(19, 25, 56);
+    color: white;
+    box-sizing: border-box;
+}
+
+.contenidoBanner1{
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 95%;
+    display: inline-flex;
+}
+
+.textoContenidoBanner1{
+    width: 40%;
+    height: min-content;
+    display: block;
+}
+
+.textoContenidoBanner1 h1{
+    margin: 5% 0%;
+    font-size: -webkit-xxx-large;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textoContenidoBanner1 p{
+    font-family: 'Montserrat';
+    font-size: larger;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.textoContenidoBanner1 button{
+    margin-top: 4%;
+    color: black;
+    padding: 1% 2%;
+    color: white;
+    text-align: center;
+    background-color: rgb(19, 25, 56);
+    font-size: larger;
+    font-family: 'Montserrat';
+    border-style: solid;
+    border-radius: 7%;
+
+}
+
+.textoContenidoBanner1 button:hover{
+    background-color: white;
+    font-weight: 900;
+    font-size: larger;
+    border-style: none;
+    color: rgb(51, 66, 143);
+}
+
+.botonVerTodoMovil{
+    display: none;
+    margin-top: 4%;
+    color: black;
+    padding: 1% 2%;
+    color: rgb(19, 25, 56);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: 'Montserrat';
+    border-style: solid;
+    border-radius: 7%;
+    text-decoration: none;
+}
+
+.botonVerTodoMovil1:hover{
+    background-color: white;
+    font-weight: 900;
+    font-size: larger;
+    border-style: none;
+    color: rgb(51, 66, 143);
+}
+
+.botonVerTodoMovil2{
+    display: none;
+    margin-top: 4%;
+    color: black;
+    padding: 1% 2%;
+    color: rgb(19, 25, 56);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: 'Montserrat';
+    border-style: solid;
+    border-radius: 7%;
+    text-decoration: none;
+}
+
+.botonVerTodoMovil3{
+    display: none;
+    margin-top: 4%;
+    color: black;
+    padding: 1% 2%;
+    color: rgb(19, 25, 56);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: 'Montserrat';
+    border-style: solid;
+    border-radius: 7%;
+    text-decoration: none;
+}
+
+
+
+.lasmasvistas {
+    padding-top: 1%;
+    margin-left: 10%;
+    width: 45%;
+    height: 45%;
+    overflow: hidden;
+}
+
+.columna {
+    max-width: 100%;
+    -webkit-transition: all 1s ease;
+    float: left;
+    width: 45%;
+    margin-left: 3.5%;
+    transition: 0.3s;
+    overflow:hidden;
+  }
+
+
+.descripcion{
+    display: none;
+    transition: 2s;
+ 
+}
+
+
+
+.descripcion p{
+    display: block;
+    color: rgb(250, 250, 250);
+    font-weight: 900;
+    font-family: 'calibri';
+    float: inline-start;
+    position: absolute;
+    font-size: larger;
+    margin-top: 44%;
+    margin-left: 74%;
+    text-align: justify;
+}
+
+.nombrePelicula{
+
+    margin: 2% 1%;
+}
+
+.categoriaPeli{
+    margin: 5% 1%;
+
+}
+
+.añoPeli{
+    margin: 8% 1%;
+
+}
+
+.notaPeli{
+    margin-top: 8%;
+    margin-left: 15.5%;
+}
+
+  .fila {
+    display: flex;
+  }
+
+.lasmasvistas  img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10%;
+    border-radius: 10%;
+    border-bottom: outset;
+    }
+
+.imdbLogo {
+    width: 40px;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 58%;
+    
+}
+
+.imdbLogo img{
+    border-bottom: none;
+    filter: grayscale(0);
+}
+
+
+.logoCorazon {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    margin-top: 2.5%;
+    margin-left:68%;
+    background-image: url(Logo\ Corazon.svg);
+    background-repeat: no-repeat;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+    
+}
+
+.logoCorazonSolido {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    margin-top: 2.5%;
+    margin-left:68%;
+    background-image: url(heart-solid.svg);
+    background-repeat: no-repeat;
+    filter: invert(0.4) sepia(1) saturate(32) hue-rotate(340deg);
+}
+
+
+
+.logoCorazonSolido img{
+    border: none;
+}
+
+.logoCorazon img{
+    border: none;
+}
+
+
+.logoEstrella{
+    width: 8%;
+    height: 9%;
+    position: absolute;
+    margin-top: 2.5%;
+    margin-left:4%;
+    background-image: url(star-regular.svg);
+    background-repeat: no-repeat;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.logoEstrella img{
+    border: none;
+}
+
+.logoEstrellaSolido{
+    width: 8%;
+    height: 9%;
+    position: absolute;
+    margin-top: 2.5%;
+    margin-left:4%;
+    background-image: url(star-solid.svg);
+    background-repeat: no-repeat;
+    filter: invert(1.4) sepia(1) saturate(13) hue-rotate(321deg);
+}
+
+.logoEstrellaSolido img{
+    border: none;
+}
+
+.logoCompartir {
+    width: 7.5%;
+    height: 7.5%;
+    position: absolute;
+    margin-top: 2.4%;
+    margin-left: 82%;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.logoCompartir img{
+    border: none;
+}
+
+.logoPlay {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 43%;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.logoPlay img{
+    border: none;
+}
+
+.logoPlay img:hover{
+    filter: invert(1) sepia(1) saturate(25) brightness(0.4) hue-rotate(150deg);
+}
+
+.columna:hover .descripcion{
+    display: block;
+}
+
+.lasmasvistas img:hover{
+
+}
+
+
+.columna:hover{
+    -webkit-transform:scale(1.08);
+}
+
+/*----------------------*/
+
+/* Clase Banner 2*/
+
+#banner2{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgb(253, 253, 253);
+    color: rgb(19, 25, 56);
+    box-sizing: border-box;
+}
+
+.contenidoBanner2{
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 95%;
+    display: inline-flex;
+}
+
+.textoContenidoBanner2{
+    width: 40%;
+    height: min-content;
+    display: block;
+}
+
+.textoContenidoBanner2 h1{
+    margin: 5% 0%;
+    font-size: -webkit-xxx-large;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textoContenidoBanner2 p{
+    font-family: 'Montserrat';
+    font-size: larger;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.textoContenidoBanner2 button{
+    margin-top: 4%;
+    color: rgb(19, 25, 56);
+    padding: 1% 2%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: 'Montserrat';
+    border-style: solid;
+    border-color: rgb(19, 25, 56);
+    border-radius: 7%;
+
+}
+
+.textoContenidoBanner2 button:hover{
+    background-color: rgb(19, 25, 56);
+    font-weight: 900;
+    font-size: larger;
+    border-style: none;
+    color: white;
+}
+/*-----------------------------------*/
+
+/* Clase Banner 3*/
+
+#banner3{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgb(163, 69, 69);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.contenidoBanner3{
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 95%;
+    display: inline-flex;
+}
+
+.textoContenidoBanner3{
+    width: 40%;
+    height: min-content;
+    display: block;
+}
+
+.textoContenidoBanner3 h1{
+    margin: 5% 0%;
+    font-size: -webkit-xxx-large;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textoContenidoBanner3 p{
+    font-family: 'Montserrat';
+    font-size: larger;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.textoContenidoBanner3 button{
+    margin-top: 4%;
+    color: rgb(255, 255, 255);
+    padding: 1% 2%;
+    text-align: center;
+    background-color: rgb(163, 69, 69);;
+    font-size: larger;
+    font-family: 'Montserrat';
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 7%;
+
+}
+
+.textoContenidoBanner3 button:hover{
+    background-color: rgb(255, 255, 255);;
+    font-weight: 900;
+    font-size: larger;
+    border-style: none;
+    color: rgb(163, 69, 69);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------Novedades de Películas----------------------------------------------------------------------------*/
+
+@keyframes animacionListaGeneros {
+    0%   {height: 0px;}
+    100% {height: 275px;}
+}
+
+@keyframes despliegueLista {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.2)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+@keyframes despliegueDatosPelis{
+    0% {
+        transform-origin: left;
+        transform: scaleX(0);
+        
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes oscurecerImagen{
+    0%{
+        filter: brightness(1);
+    }
+
+    100%{
+        filter: brightness(0.5);
+    }
+}
+
+
+/* Lista Novedades Película */
+
+#novedades{
+    width: 80%;
+    margin: 0% 10%;
+    padding-top: 4%;
+    background-color: rgba(19, 25, 56,0.82);
+}
+
+#novedades h4{
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: x-large;
+    top: 75px;
+    left: 213px;
+}
+
+.listaPeliculas{
+    width: 99%;
+    margin-left: 4%;
+
+}
+
+
+
+.filaNovedades{
+    display: inline-flex;
+    margin-bottom: 5%;
+    width: 100%;
+    margin: 1% 0% 0% 1%;;
+}
+
+.columnaNovedades{
+    display: inline-block;
+    width: 13%;
+    transition: all 0.3s ease 0s;
+    margin: 0.4% 0%;
+    overflow: hidden;
+}
+
+.columnaNovedades p{
+    padding-top: 7%;
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: small;
+}
+
+.columnaNovedades img{
+    width: 172.02px;
+    height: 255.14px;
+    border-radius: 10px;
+    margin-left: 6.5%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+
+
+}
+
+.logoPlayNovedades{
+    position: absolute;
+    width: 173.02px;
+    height: 100px;
+    margin: 0% 0%;
+    display: none;
+    z-index: 10;
+    margin: -18.7vh 0%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: rgba(24, 24, 24, 0.884);
+    animation: despliegueDatosPelis 250ms ease-in-out;
+    transform-origin: 0% 100%;
+    
+}
+
+
+.logoPlayNovedades a {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    z-index: 11;
+    margin: 12% 70%;
+    filter: brightness(0) invert(1);
+}
+
+.logoPlayNovedades a img{
+    width: 35px;
+    height: 45px;
+    background: no-repeat;
+    box-shadow: none;
+}
+
+.imdbLogoNovedades{
+    width: 55px;
+    height: auto;
+    margin: 5% 2%;
+}
+
+.imdbLogoNovedades img{
+    width: 55px;
+    height: 21.53px;
+    margin: auto;
+    box-shadow: none;
+}
+
+.notaNovedades{
+    width: fit-content;
+    display: flex;
+    margin:-19.5% 36%;
+}
+
+.notaNovedades p{
+   color: white;
+    
+}
+
+.divImagenPelisGenero{
+    width: 70%;
+    height: 85%;
+    border-radius: 10px;
+    margin: 0% 20%;
+    border-bottom: outset;
+    border-bottom-color: rgb(44, 43, 43);
+}
+
+.columnaNovedades img:hover {
+    animation: oscurecerImagen 250ms ease-in-out;
+    filter: brightness(0.5);
+
+}
+
+.columnaNovedades a:hover + div{
+    display: block;
+    pointer-events: none;
+}
+
+
+
+
+.datosPelicula {
+    width: 215px;
+    height: 20px;
+    display: inline-flex;
+    margin: 2% 15%;
+}
+
+.datosPelicula p {
+    margin: 0% 5%;
+    font-size: small;
+    font-family: 'Montserrat';
+}
+
+/*-------------------------------------------------------------------Explorar (Géneros Películas)-----------------------------------------------------------------------------------*/
+
+.explorar{
+    width: 80%;
+    margin: 0% 10%;
+    background-color: rgba(15, 26, 56, 0.85);
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 20px 20px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+}
+
+.listaMisPeliculas{
+    width: 100%;
+    padding-top: 8%;
+    margin: 0% 0%;
+}
+
+
+.explorar h4{
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: x-large;
+    top: 75px;
+    left: 213px;
+}
+
+.columnaGeneroExplorar{
+    width: 12%;
+    display: inline-block;
+    margin: 1% 0% 0% 0.06%;
+  }
+
+
+.columnaGeneroExplorar p{
+    padding-top: 7%;
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: small;
+}
+
+.columnaGeneroExplorar img{
+    width: 175px;
+    height: 255px;
+    border-radius: 10px;
+    margin:  0% 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logoPlayExplorar{
+    position: absolute;
+    width: 176px;
+    height: 100px;
+    margin: -100px 18px;
+    display: none;
+    z-index: 10;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: rgba(24, 24, 24, 0.884);
+    animation: despliegueDatosPelis 250ms ease-in-out;
+    transform-origin: 0% 100%;
+    
+}
+
+
+.logoPlayExplorar a {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    z-index: 11;
+    margin: 12% 70%;
+    filter: brightness(0) invert(1);
+}
+
+.logoPlayExplorar a img{
+    width: 35px;
+    height: 45px;
+    background: no-repeat;
+    box-shadow: none;
+}
+
+.seccionRecVistas{
+    width: 15%;
+    height: 32px;
+    position: absolute;
+    margin: 1% 0% 0% 1%;
+}
+
+.seleccionExplorar{
+    width: 32vw;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat';
+    margin: 2% 24vw 0% 23vw;
+    position: absolute;
+}
+
+.seleccionExplorar a{
+    display: inline-block;
+    color: white;
+    margin: 2% 0% 0% 0%;
+    text-decoration: none;
+    padding: 2% 3% 1% 3%;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.seleccionExplorar a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255); 
+}
+
+.seleccionExplorar a.active{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.columnaGeneroExplorar img:hover {
+    animation: oscurecerImagen 250ms ease-in-out;
+    filter: brightness(0.5);
+
+}
+
+.columnaGeneroExplorar a:hover + div{
+    display: block;
+    pointer-events: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------Reproducción de Película----------------------------------------------------------------------------------------*/
+
+
+.FondoReproduccion{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -7%;
+}
+
+.FondoReproduccion img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.tituloPortada img{
+    width: 50%;
+    display: block;
+    margin: 0% 0%;
+}
+
+.videoFondo{
+    object-fit: cover;
+    width: 100vw;
+
+}
+
+.fas-fa-play{
+    width: 5%;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+.fas-fa-play img{
+    width: 100%;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.fas-fa-play img:hover{
+    filter: invert(1) sepia(1) saturate(25) brightness(0.4) hue-rotate(150deg);
+}
+
+
+.FondoReproduccion:before{
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgb(19,25,56) 70%);
+}
+
+.HeaderReproduccion{
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(19, 25, 56, 0.75);
+}
+
+
+.descripcionPeliPortadaReproducir{
+    position: absolute;
+    z-index: 5;
+    top:30%;
+    left: 2%;
+    width: 40%;
+}
+
+
+.descripcionPeliPortadaReproducir p{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: larger;
+    text-align: justify;
+}
+
+.descripcionPeliPortadaReproducir p a{
+    color: white;
+    text-decoration: none;
+}
+
+.descripcionPeliPortadaReproducir p a:hover{
+    font-weight: bolder;
+}
+
+.imdbLogoReproducir{
+    width: 40px;
+    position: absolute;
+    margin: 2.5% 280px;
+}
+
+.imdbLogoReproducir img{
+    display: block;
+    margin: auto;
+}
+
+.notaPeliReproducir {
+    padding-left: 10%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------Bio Directores y Actores-------------------------------------------------*/
+
+.infoDirector, .infoActor{
+    width: 80vw;
+    height: auto;
+    margin: 0% 10vw;
+    background-color: rgb(19,25,56);
+}
+
+    .imagenDirector,.imagenActor{
+        width: 100%;
+        height: 65vh;
+        margin: 0% 0%;
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 90%),url(https://www.duna.cl/media/2019/07/quentin-tarantino.jpg);
+        background-size:cover ;
+    }
+
+    .imagenActor{
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 90%),url(https://www.lecturas.com/medio/2020/09/23/ryan-gosling_20e7631f_1200x630.jpg);
+    }
+
+    .imagenDirector img{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        
+    }
+
+    .bioDirector, .bioActor{
+        color: white;
+        margin: 0% 1%;
+    }
+    .bioDirector h1, .bioActor h1{
+        font-size: -webkit-xxx-large;
+        font-weight: bolder;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .bioDirector p, .bioActor p{
+        font-family: 'Montserrat';
+        word-spacing: 2px ;
+    }
+
+    .peliculasDirector, .peliculasActor{
+        margin: 2% 1%;
+        color: white;
+    }
+
+    .peliculasDirector h4, .peliculasActor h4{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+
+/*-----------------------------------------------Cuenta-----------------------------------------------------------------*/
+
+.Cuenta{
+    display: inline-block;
+    width: 80%;
+    height: 93vh;
+    margin: 0% 10%;
+}
+
+.Cuenta div{
+    display: inline-block;
+}
+.opciones{
+    width: 15%;
+    margin: 10% 0% 0% 13%;
+    display: inline-block;
+}
+
+.opciones h1{
+    padding-bottom: 15%;
+    color: white;
+    font-family: 'Montserrat';
+    display: block;
+    font-size: 300%;
+}
+
+.opciones ul li{
+    margin: 25% 15%;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: large;
+}
+
+.opciones ul a{
+    text-decoration: none;
+}
+
+.opciones ul  a:hover{
+    font-weight: bolder;
+}
+
+.active{
+    color: white;
+    font-weight: bold;
+}
+
+
+.ajustesCuenta{
+    width: 70%;
+    margin: -29% 0% 0% 30% ;
+    background-color: rgba(19, 25, 56, 0.884);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+
+.ajustesCuenta h4{
+    font-size: xx-large;
+    font-family: 'Montserrat';
+    margin: 2%;
+}
+
+.imagenPerfil{
+    margin-left: 4%;
+}
+
+.imagenPerfil img{
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100px;
+    width: 100px;
+}
+
+.ajustesCuenta form{
+    display: block;
+}
+
+.datosPersonales{
+    width: 100%;
+}
+
+.datosPersonales p{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.botonesCuenta{
+    margin-left: 75%;
+    display: inline;
+    width: 20%;
+}
+
+.botonesCuenta button{
+    width: 45%;
+    display: inline;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0% 2%;
+    background-color:white;
+    color: rgb(19, 25, 56);
+    font-weight: bolder;
+    font-family: 'Montserrat';
+}
+
+.nombreFormulario{
+    margin-left: 5%;
+    width: 45%;
+    display: inline-block;
+}
+
+.apellidoFormulario{
+    margin-left: 3%;
+    width: 45%;
+    display: inline-block;
+}
+
+.fname{
+    display: block;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+input{
+    margin: 0%;
+    border-radius: 5px;
+    border-color: white;
+    width: 90%;
+    padding: 10px 0px;
+}
+
+
+input:active{
+    border-style: outset;
+    border-color: white;
+    
+}
+
+hr{
+    margin: 4% 0%;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------Mis Películas-----------------------------------------------------------------*/
+
+.misPeliculas{
+    width: 80%;
+    margin: 0% 10%;
+    background-color: rgba(15, 26, 56, 0.85);
+}
+
+.listaMisPeliculas{
+    width: 100%;
+    padding-top: 8%;
+    margin: 0% 0%;
+}
+
+
+.misPeliculas h4{
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: x-large;
+    top: 75px;
+    left: 213px;
+}
+
+.columnaGeneroMisPeliculas{
+    width: 13%;
+    display: inline-block;
+    margin-bottom: 5%;
+    margin: 1% 0% 0% 0%;
+
+
+  }
+
+
+.columnaGeneroMisPeliculas p{
+    padding-top: 7%;
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: small;
+}
+
+.columnaGeneroMisPeliculas img{
+    width: 175px;
+    height: 255px;
+    border-radius: 10px;
+    margin: 0% 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seccionRecVistas{
+    width: 15%;
+    height: 32px;
+    position: absolute;
+    margin: 1% 0% 0% 1%;
+}
+
+.seleccionMisPeliculas{
+    width: 25%;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat';
+    margin: 2% 28% 0% 27%;
+    position: absolute;
+
+}
+
+.seleccionMisPeliculas a{
+    display: inline-block;
+    color: white;
+    margin: 2% 0% 0% 0%;
+    text-decoration: none;
+    padding: 2% 3% 1% 3%;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.seleccionMisPeliculas a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255); 
+}
+
+.seleccionMisPeliculas a.active{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.descripcionPadre{
+    display: none;
+}
+
+.descripcionMisPeliculas{
+    overflow: hidden;
+    display: none;
+    height: 250px;
+    width: 175px;
+    position: absolute;
+    margin: 0% 2%;
+    
+}
+
+.descripcionMisPeliculas p{
+    color: rgb(250, 250, 250);
+    position: absolute;
+    font-size: normal;
+    margin-top: 9%;
+    margin-left: 6%;
+    text-align: justify;
+    font-weight: normal;
+}
+
+
+
+.logoPlayMisPeliculas{
+    position: absolute;
+    width: 176px;
+    height: 100px;
+    display: none;
+    z-index: 10;
+    margin: -6.7% 0.0%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: rgba(24, 24, 24, 0.882);
+    animation: 250ms ease-in-out 0s 1 normal none running despliegueDatosPelis;
+    transform-origin: 0% 100%;
+    
+}
+
+
+.logoPlayMisPeliculas a {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    z-index: 11;
+    margin: 12% 70%;
+    filter: brightness(0) invert(1);
+}
+
+.logoPlayMisPeliculas a img{
+    width: 35px;
+    height: 45px;
+    background: no-repeat;
+    box-shadow: none;
+}
+
+.imdbLogoMisPeliculas{
+    width: 55px;
+    height: auto;
+    margin: 5% 2%;
+}
+
+.imdbLogoMisPeliculas img{
+    width: 55px;
+    height: 21.53px;
+    margin: auto;
+    box-shadow: none;
+}
+
+.notaMisPeliculas{
+    width: fit-content;
+    display: flex;
+    margin: -19.5% 36%;
+}
+
+.columnaGeneroMisPeliculas img:hover{
+    animation: oscurecerImagen 250ms ease-in-out;
+    filter: brightness(0.5);
+}
+
+.columnaGeneroMisPeliculas a:hover + div{
+    display: block;
+    pointer-events: none;
+    
+}
+
+
+
+/*------------------------------------------------------SLIDER-------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .desplegableHeader{
+        display: none;
+    }
+
+    
+
+    .botonesSlider{
+        width: 14%;
+        margin-left: 42%;
+        margin-top: -30%;
+    }
+
+    ul.slider{
+        position: relative;
+        width: 100%;
+    }
+
+    .botonPortada1{
+         width: 15%;
+         padding: 2% 1.5%;
+         margin: 12% 2% 0% 2%;
+    }
+
+    .botonPortada2{
+        width: 20%;
+        padding: 2% 1.5%;
+        margin: 12% 2% 0% 18%;
+   }
+
+   #banner1{
+       margin-top: 0%;
+   }
+
+   #banner1, #banner2, #banner3{
+       padding-bottom: 5%;
+   }
+
+   .lasmasvistas{
+       width: 65%;
+       margin-top: 15%;
+       margin-left: 2.5%;
+   }
+
+   .logoPlay{
+       margin-top: 15%;
+       margin-left: 38%;
+   }
+
+   .imdbLogo{
+       width: 10%;
+   }
+
+   .descripcion p {
+       font-size: 2vw;
+       margin-top: 42.5%;
+       margin-left: 70%;
+   }
+
+   .textoContenidoBanner1, .textoContenidoBanner2, .textoContenidoBanner3 {
+       width: 50%;
+   }
+
+   .textoContenidoBanner1 p, .textoContenidoBanner2 p, .textoContenidoBanner3 p {
+       word-spacing: 5px;
+       text-align: start;
+   }
+
+   .ajustesCuenta{
+       margin: -45% 0% 0% 30% ;
+    }
+
+   .botonesCuenta{
+      margin-left: 55%;
+      display: inline;
+      width: 40%;
+    }
+
+    .opciones{
+        width: 35%;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .opciones h1{
+        padding-bottom: 0%;
+    }
+}
+
+/*-----------------------------------------------RESPONSIVE TABLET----------------------------*/
+@media screen and (max-width: 768px) {
+    header nav{
+        display: none;
+    }
+
+    header{
+        width: 100vw;
+    }
+
+    #Logo{
+        margin: auto;
+        padding: 1%;
+    }
+
+    .logoTexto{
+        font-size: 3vw;
+        margin: 0% 0% 0% 6%;
+    }
+
+    #Logo img{
+        display: flex;
+        height: 3vw;
+        width: 3vw;
+        margin: 2% 0%;
+    }
+
+    .botonesSlider{
+        width: 14%;
+        margin-left: 42%;
+        margin-top: -20%;
+    }
+
+    ul.slider{
+        position: relative;
+        width: 100%;
+    }
+
+    .botonPortada1{
+         width: 15%;
+         padding: 2% 1.5%;
+         margin: 6% 2% 0% 2%;
+    }
+
+    .botonPortada2{
+        width: 20%;
+        padding: 2% 1.5%;
+        margin: 6% 2% 0% 18%;
+   }
+
+   #banner1{
+       margin-top: -20%;
+   }
+
+   #banner1, #banner2, #banner3{
+       padding-bottom: 5%;
+   }
+
+   .lasmasvistas{
+       width: 65%;
+       margin-top: 15%;
+       margin-left: 2.5%;
+   }
+
+   .logoPlay{
+       margin-top: 15%;
+       margin-left: 38%;
+   }
+
+   .imdbLogo{
+       width: 10%;
+   }
+
+   .descripcion p {
+       font-size: 2vw;
+       margin-top: 42.5%;
+       margin-left: 70%;
+   }
+
+   .textoContenidoBanner1, .textoContenidoBanner2, .textoContenidoBanner3 {
+       width: 50%;
+   }
+
+   .textoContenidoBanner1 p, .textoContenidoBanner2 p, .textoContenidoBanner3 p {
+       word-spacing: 5px;
+       text-align: start;
+   }
+
+   .ajustesCuenta{
+       margin: -50% 0% 0% 30% ;
+    }
+
+   .botonesCuenta{
+      margin-left: 45%;
+      display: inline;
+      width: 50%;
+    }
+
+    .opciones{
+        width: 35%;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .opciones h1{
+        padding-bottom: 0%;
+    }
+}
+/*---------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------RESPONSIVE iPad----------------------------*/
+@media screen and (device-aspect-ratio: 4/3) {
+    header nav{
+        display: block;
+        width: 35%;
+        height: 32px;
+        margin: 1.5% 0% 0% 2%;
+    }
+
+    header{
+        width: 100vw;
+    }
+
+    .desplegableHeader{
+        display: none;
+        width: 25px;
+        margin: 6px 0px;
+    }
+
+    #listaHeader{
+        width: 35vw;
+        height: 362px;
+        margin: 1px 0% 0% 0vw;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: none;
+        animation: 300ms ease-in-out 0s 1 normal none running despliegueLista;
+        transform-origin: center top;
+        position: fixed;
+    }
+
+    #listaHeader a{
+        text-decoration: none;
+    }
+
+    .lupa{
+        margin: -7% 0% 0% 170%;
+        float: left;
+        
+    }
+
+    .user{
+        margin: -7% 0% 4% 200%;
+        float: left;
+    }
+
+    .iconoMPeliculas {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        place-content: center;
+        align-items: center;
+        filter: brightness(0) invert(1);
+        margin: -1% 3% -5% -1%;
+    }
+
+    .explorar h4, .misPeliculas h4, #novedades h4 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: x-large;
+        top: 75px;
+        left: 120px;
+    }
+
+    .seleccionExplorar, .seleccionMisPeliculas {
+        width: 59vw;
+        display: flex;
+        color: white;
+        font-family: Montserrat;
+        margin: 6% 11vw 0% 10vw;
+        position: absolute;
+    }
+
+    .seleccionMisPeliculas{
+        width: 40vw;
+        margin: 6% 21vw 0% 19vw;
+    }
+
+    .columnaGeneroExplorar,.columnaGeneroMisPeliculas, .columnaNovedades{
+        width: 13%;
+        display: inline-block;
+        margin: 1% 0% 0% 0.6%;
+    }
+
+    .listaMisPeliculas{
+        width: 100%;
+        padding-top: 16%;
+    }
+
+    .listaPeliculas{
+        width: 100%;
+        margin: 0% 0%;
+        padding-top: 4%;
+    }
+
+    .columnaGeneroExplorar img,.columnaGeneroMisPeliculas img, .columnaNovedades img {
+        width: 97.5px;
+        height: 127.5px;
+        border-radius: 10px;
+        margin: 0% 10%;
+        box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    }
+
+    .FondoReproduccion {
+        position: relative;
+        width: 100%;
+        height: 768px;
+        margin-top: 0%;
+    }
+
+    .videoFondo {
+        display: inline-block;
+        width: 1024px;
+        height: 793px;
+        margin: -25px 0px 0px 0px;
+        object-fit: cover;
+    }
+
+    .imdbLogoReproducir {
+        width: 40px;
+        position: absolute;
+        margin: 2.5% 0px 0px 243px;
+    }
+
+    .añoGenDur {
+        display: -webkit-box;
+        padding: 5% 0% 2% 0%;
+    }
+
+    .fas-fa-play {
+        width: 5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .descripcionPeliPortadaReproducir p a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .imagenDirector, .imagenActor {
+        width: 100%;
+        height: 45vh;
+        margin: 0%;
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 90%), url(https://www.duna.cl/media/2019/07/quentin-tarantino.jpg);
+        background-size: cover;
+    }
+
+    .notaPeliReproducir {
+        padding-left: 20%;
+    }
+    
+    #Logo{
+        margin: 0% 1%;
+        padding: 1%;
+    }
+
+    .logoTexto{
+        font-size: 3vw;
+        margin: 0% 0% 0% 6%;
+    }
+
+    #Logo img{
+        display: flex;
+        height: 3vw;
+        width: 3vw;
+        margin: 2% 0%;
+    }
+
+    .botonesSlider{
+        width: 9%;
+        margin: -20% 45.5% 0% 45.5%;
+    }
+
+    ul.slider{
+        position: relative;
+        width: 100%;
+    }
+
+    .botonPortada1{
+         width: 15%;
+         padding: 2% 1.5%;
+         margin: 6% 2% 0% 2%;
+    }
+
+    .botonPortada2{
+        width: 20%;
+        padding: 2% 1.5%;
+        margin: 6% 2% 0% 18%;
+   }
+
+   #banner1{
+        margin-top: 0%;
+   }
+
+   #banner1, #banner2, #banner3{
+       padding-bottom: 5%;
+   }
+
+   .lasmasvistas{
+       width: 65%;
+       margin-top: 5%;
+       margin-left: 2.5%;
+   }
+
+   .logoPlay{
+       margin-top: 15%;
+       margin-left: 38%;
+   }
+
+   .imdbLogo{
+       width: 10%;
+   }
+
+   .descripcion p {
+       font-size: 2vw;
+       margin-top: 42.5%;
+       margin-left: 70%;
+   }
+
+   .textoContenidoBanner1, .textoContenidoBanner2, .textoContenidoBanner3 {
+       width: 50%;
+   }
+
+   .textoContenidoBanner1 p, .textoContenidoBanner2 p, .textoContenidoBanner3 p {
+       word-spacing: 5px;
+       text-align: start;
+   }
+
+   .ajustesCuenta{
+       margin: -50% 0% 0% 30% ;
+    }
+
+   .botonesCuenta{
+      margin-left: 45%;
+      display: inline;
+      width: 50%;
+    }
+
+    .opciones{
+        width: 35%;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .opciones h1{
+        padding-bottom: 0%;
+    }
+}
+/*---------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------RESPONSIVE MOVIL L-------------------------------*/
+@media screen and (max-device-width:425px) {
+    header nav{
+        display: none;
+    }
+
+    header{
+        width: 100vw;
+        height: 35px;
+        position: fixed;
+    }
+
+    .desplegableHeader{
+        display: block;
+        width: 20px;
+    }
+
+    #listaHeader{
+        width: 100vw;
+        height: 360px;
+        margin: -6px 0% 0% 0vw;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: none;
+        animation: despliegueLista 300ms ease-in-out;
+        transform-origin: top center;
+        position: fixed;
+    }
+
+    #listaHeader a{
+        text-decoration: none;
+    }
+
+    .iconoMPeliculas{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        filter: brightness(0) invert(1);
+        margin: -1% 3% -5% -1%;
+    }
+
+    #Logo{
+        margin: auto;
+        padding: 0%;
+    }
+
+    .logoTexto{
+        font-size: 5vw;
+        margin: 0% 0% 0% 6%;
+    }
+
+    #Logo img{
+        display: flex;
+        height: 5vw;
+        width: 5vw;
+        margin: 2% 0%;
+    }
+
+    .tituloPortada{
+        font-size: 45px;
+        width: 90%;
+        height: 150px;
+    }
+
+    .botonesSlider{
+        width: 25%;
+        margin-left: 42%;
+        margin-top: -30%;
+    }
+
+    #recomendacion{
+        position: relative;
+        width: 100%;
+        height: 450px;
+        
+    }
+
+    .botonPortada1{
+         width: 30%;
+         padding: 2% 1.5%;
+         margin: 6% 2% 0% 2%;
+    }
+
+    .botonPortada2{
+        width: 36%;
+        padding: 2% 1.5%;
+        margin: 6% 2% 0% 36%;
+   }
+
+   #banner1{
+        margin-top: 0%;
+    }
+
+   
+
+   #titulobanner{
+       display: block;
+       margin-left: 50%;
+       width: 90%;
+       font-size: 7vw;
+       text-align: center;
+   }
+
+   .textoContenidoBanner1 button, .textoContenidoBanner2 button, .textoContenidoBanner3 button{
+       display: none;
+    }
+
+    .botonVerTodoMovil{
+        display: block;
+        margin: 0% 5%;
+    }
+
+    .botonVerTodoMovil2{
+        display: block;
+        margin: 0% 5%;
+        background-color: rgb(19, 25, 56);
+        color: white;
+    }
+
+    .botonVerTodoMovil3{
+        display: block;
+        margin: 0% 5%;
+    }
+
+   .lasmasvistas{
+       display: block;
+       width: 100%;
+       margin-top: 15%;
+       margin-left: -52.5%;
+   }
+
+   .logoPlay{
+       margin-top: 15%;
+       margin-left: 38%;
+   }
+
+   .imdbLogo{
+       width: 15%;
+       margin-left: 52.5%;
+   }
+
+   .descripcion p {
+       font-size: 4vw;
+       margin-top: 42.5%;
+       margin-left: 70%;
+   }
+
+   .textoContenidoBanner1, .textoContenidoBanner2, .textoContenidoBanner3 {
+       width: 50%;
+   }
+
+   .textoContenidoBanner1 p, .textoContenidoBanner2 p, .textoContenidoBanner3 p {
+       display: none;
+       word-spacing: 5px;
+       text-align: start;
+   }
+
+   .listaMisPeliculas{
+        width: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+        background-color: rgb(15,26,56,85%);
+        margin: 0%;
+    }
+
+   .ajustesCuenta{
+       margin: -90% 0% 0% 30% ;
+    }
+
+   .botonesCuenta{
+      margin-left: 5%;
+      display: inline;
+      width: 90%;
+    }
+
+    .opciones{
+        width: 45%;
+        margin: 10% 0% 0% -10%;
+    }
+
+    .opciones h1{
+        padding-bottom: 0%;
+    }
+
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------RESPONSIVE MOVIL M-------------------------------*/
+
+
+@media screen and (max-device-width:374px) {
+    header nav{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        height: 6vh;
+    }
+
+    #Logo{
+        margin: auto;
+        padding: 1%;
+    }
+
+    .logoTexto{
+        font-size: 3vw;
+        margin: 0% 0% 0% 6%;
+    }
+
+    #Logo img{
+        display: flex;
+        height: 3vw;
+        width: 3vw;
+        margin: 2% 0%;
+    }
+
+    .tituloPortada{
+        font-size: 60px;
+        width: 90%;
+        height: 150px;
+    }
+
+    .botonesSlider{
+        width: 26%;
+        margin-left: 42%;
+        margin-top: -30%;
+    }
+
+    #recomendacion{
+        position: relative;
+        width: 100%;
+        height: 450px;
+        
+    }
+
+    .botonPortada1{
+         width: 30%;
+         padding: 2% 1.5%;
+         margin: 6% 2% 0% 2%;
+    }
+
+    .botonPortada2{
+        width: 45%;
+        padding: 2% 1.5%;
+        margin: 6% 2% 0% 36%;
+   }
+
+   #banner1{
+       margin-top: 0%;
+       padding-top: 3%;
+   }
+
+   #banner1 ,#banner2 ,#banner3{
+       width: 100%;
+   }
+
+   #titulobanner{
+       display: block;
+       margin-left: 50%;
+       width: 90%;
+       font-size: 7vw;
+       text-align: center;
+   }
+
+   .textoContenidoBanner1 button, .textoContenidoBanner2 button, .textoContenidoBanner3 button{
+       display: none;
+    }
+
+    .botonVerTodoMovil{
+        display: block;
+        margin: 0% 5%;
+    }
+
+    .botonVerTodoMovil2{
+        display: block;
+        margin: 0% 5%;
+        background-color: rgb(19, 25, 56);
+        color: white;
+    }
+
+    .botonVerTodoMovil3{
+        display: block;
+        margin: 0% 5%;
+    }
+
+   .lasmasvistas{
+       display: block;
+       width: 100%;
+       margin-top: 15%;
+       margin-left: -52.5%;
+   }
+
+   .logoPlay{
+       margin-top: 15%;
+       margin-left: 38%;
+   }
+
+   .imdbLogo{
+       width: 15%;
+       margin-left: 52.5%;
+   }
+
+   .descripcion p {
+       font-size: 4vw;
+       margin-top: 42.5%;
+       margin-left: 70%;
+   }
+
+   .textoContenidoBanner1, .textoContenidoBanner2, .textoContenidoBanner3 {
+       width: 50%;
+   }
+
+   .textoContenidoBanner1 p, .textoContenidoBanner2 p, .textoContenidoBanner3 p {
+       display: none;
+       word-spacing: 5px;
+       text-align: start;
+   }
+
+   .ajustesCuenta{
+       width: 82%;
+       margin: -90% 0% 0% 30% ;
+    }
+
+   .botonesCuenta{
+      margin-left: 5%;
+      display: inline;
+      width: 90%;
+    }
+
+    .opciones{
+        width: 45%;
+        margin: 10% 0% 0% -10%;
+    }
+
+    .opciones h1{
+        padding-bottom: 0%;
+    }
+
+}
