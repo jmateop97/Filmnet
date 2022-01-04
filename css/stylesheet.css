@@ -1894,6 +1894,260 @@ hr{
 /*---------------------------------------------------------------------------------------------*/
 
 
+/*-----------------------------------------------RESPONSIVE iPad----------------------------*/
+@media screen and (device-aspect-ratio: 4/3) {
+    header nav{
+        display: block;
+        width: 35%;
+        height: 32px;
+        margin: 1.5% 0% 0% 2%;
+    }
+
+    header{
+        width: 100vw;
+    }
+
+    .desplegableHeader{
+        display: none;
+        width: 25px;
+        margin: 6px 0px;
+    }
+
+    #listaHeader{
+        width: 35vw;
+        height: 362px;
+        margin: 1px 0% 0% 0vw;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: none;
+        animation: 300ms ease-in-out 0s 1 normal none running despliegueLista;
+        transform-origin: center top;
+        position: fixed;
+    }
+
+    #listaHeader a{
+        text-decoration: none;
+    }
+
+    .lupa{
+        margin: -7% 0% 0% 170%;
+        float: left;
+        
+    }
+
+    .user{
+        margin: -7% 0% 4% 200%;
+        float: left;
+    }
+
+    .iconoMPeliculas {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        place-content: center;
+        align-items: center;
+        filter: brightness(0) invert(1);
+        margin: -1% 3% -5% -1%;
+    }
+
+    .explorar h4, .misPeliculas h4, #novedades h4 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: x-large;
+        top: 75px;
+        left: 120px;
+    }
+
+    .seleccionExplorar, .seleccionMisPeliculas {
+        width: 59vw;
+        display: flex;
+        color: white;
+        font-family: Montserrat;
+        margin: 6% 11vw 0% 10vw;
+        position: absolute;
+    }
+
+    .seleccionMisPeliculas{
+        width: 40vw;
+        margin: 6% 21vw 0% 19vw;
+    }
+
+    .columnaGeneroExplorar,.columnaGeneroMisPeliculas, .columnaNovedades{
+        width: 13%;
+        display: inline-block;
+        margin: 1% 0% 0% 0.6%;
+    }
+
+    .listaMisPeliculas{
+        width: 100%;
+        padding-top: 16%;
+    }
+
+    .listaPeliculas{
+        width: 100%;
+        margin: 0% 0%;
+        padding-top: 4%;
+    }
+
+    .columnaGeneroExplorar img,.columnaGeneroMisPeliculas img, .columnaNovedades img {
+        width: 97.5px;
+        height: 127.5px;
+        border-radius: 10px;
+        margin: 0% 10%;
+        box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    }
+
+    .FondoReproduccion {
+        position: relative;
+        width: 100%;
+        height: 768px;
+        margin-top: 0%;
+    }
+
+    .videoFondo {
+        display: inline-block;
+        width: 1024px;
+        height: 793px;
+        margin: -25px 0px 0px 0px;
+        object-fit: cover;
+    }
+
+    .imdbLogoReproducir {
+        width: 40px;
+        position: absolute;
+        margin: 2.5% 0px 0px 243px;
+    }
+
+    .añoGenDur {
+        display: -webkit-box;
+        padding: 5% 0% 2% 0%;
+    }
+
+    .fas-fa-play {
+        width: 5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .descripcionPeliPortadaReproducir p a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .imagenDirector, .imagenActor {
+        width: 100%;
+        height: 45vh;
+        margin: 0%;
+        background-image: linear-gradient(transparent, rgb(19, 25, 56) 90%), url(https://www.duna.cl/media/2019/07/quentin-tarantino.jpg);
+        background-size: cover;
+    }
+
+    .notaPeliReproducir {
+        padding-left: 20%;
+    }
+    
+    #Logo{
+        margin: 0% 1%;
+        padding: 1%;
+    }
+
+    .logoTexto{
+        font-size: 3vw;
+        margin: 0% 0% 0% 6%;
+    }
+
+    #Logo img{
+        display: flex;
+        height: 3vw;
+        width: 3vw;
+        margin: 2% 0%;
+    }
+
+    .botonesSlider{
+        width: 9%;
+        margin: -20% 45.5% 0% 45.5%;
+    }
+
+    ul.slider{
+        position: relative;
+        width: 100%;
+    }
+
+    .botonPortada1{
+         width: 15%;
+         padding: 2% 1.5%;
+         margin: 6% 2% 0% 2%;
+    }
+
+    .botonPortada2{
+        width: 20%;
+        padding: 2% 1.5%;
+        margin: 6% 2% 0% 18%;
+   }
+
+   #banner1{
+        margin-top: 0%;
+   }
+
+   #banner1, #banner2, #banner3{
+       padding-bottom: 5%;
+   }
+
+   .lasmasvistas{
+       width: 65%;
+       margin-top: 5%;
+       margin-left: 2.5%;
+   }
+
+   .logoPlay{
+       margin-top: 15%;
+       margin-left: 38%;
+   }
+
+   .imdbLogo{
+       width: 10%;
+   }
+
+   .descripcion p {
+       font-size: 2vw;
+       margin-top: 42.5%;
+       margin-left: 70%;
+   }
+
+   .textoContenidoBanner1, .textoContenidoBanner2, .textoContenidoBanner3 {
+       width: 50%;
+   }
+
+   .textoContenidoBanner1 p, .textoContenidoBanner2 p, .textoContenidoBanner3 p {
+       word-spacing: 5px;
+       text-align: start;
+   }
+
+   .ajustesCuenta{
+       margin: -50% 0% 0% 30% ;
+    }
+
+   .botonesCuenta{
+      margin-left: 45%;
+      display: inline;
+      width: 50%;
+    }
+
+    .opciones{
+        width: 35%;
+        margin: 10% 0% 0% 0%;
+    }
+
+    .opciones h1{
+        padding-bottom: 0%;
+    }
+}
+/*---------------------------------------------------------------------------------------------*/
+
 /*--------------------------------------------RESPONSIVE MOVIL L-------------------------------*/
 @media screen and (max-device-width:425px) {
     header nav{
