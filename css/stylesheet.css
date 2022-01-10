@@ -118,9 +118,9 @@ header{
 
 
 header nav{
-    width: 90%;
+    width: 50%;
     display: flex;
-    margin: 0% 0% 0% 0%;
+    margin: 0.35% 0% 0% 0%;
 }
 
 
@@ -172,25 +172,75 @@ header nav a:hover{
     margin: -3% 0%;
 }
 
-.lupa{
-    width: 25px;
-    height: 25px;
-    margin: 0.75% 1% 0% 55%;
+@keyframes despliegueSearchBar{
+    0% {
+        transform-origin: right;
+        transform: scaleX(0);
+        
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
 }
 
-.lupa img{
+@keyframes pliegueSearhBar {
+    0% {
+        transform-origin: left;
+        transform: scaleX(1);
+        
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+.buscarPelicula{
+    width: 250px;
+    height: 40px;
     display: flex;
-    width: 25px;
-    height: 25px;
+    margin: 5px 0% 5px 10%;
+    
+}
+
+
+#inputBuscarPeliHeader{
+    display: none;
+    margin: 0%;
+    border-radius: 0px;
+    border-color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0px;
+    animation: 250ms ease-in-out 0s 1 normal none running despliegueSearchBar;
+    transform-origin: 100% 0%;
+}
+
+#lupa{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    background: none rgb(51, 66, 143);
+    border: none;
+    cursor: pointer;
+    left: 84.9%;
+}
+
+#lupa img{
+    display: flex;
+    width: 50%;
+    height: 50%;
     filter: brightness(0) invert(1);
+    border-radius: 50px;
+    margin: auto;
     
 }
 
 .user{
     width: 25px;
     height: 25px;
-    margin-left: 5%;
-    margin-top: 0.75%;
+    margin: 12.5px 0% 12.5px 10%;
 }
 
 .user img{
@@ -500,7 +550,7 @@ ul.slider li:target {
     font-family: 'Montserrat';
     border-style: solid;
     border-radius: 7%;
-
+    cursor: pointer;
 }
 
 .textoContenidoBanner1 button:hover{
@@ -547,6 +597,7 @@ ul.slider li:target {
     border-style: solid;
     border-radius: 7%;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .botonVerTodoMovil3{
@@ -810,7 +861,7 @@ ul.slider li:target {
     border-style: solid;
     border-color: rgb(19, 25, 56);
     border-radius: 7%;
-
+    cursor: pointer;
 }
 
 .textoContenidoBanner2 button:hover{
@@ -871,7 +922,7 @@ ul.slider li:target {
     border-style: solid;
     border-color: rgb(255, 255, 255);
     border-radius: 7%;
-
+    cursor: pointer;
 }
 
 .textoContenidoBanner3 button:hover{
@@ -945,9 +996,8 @@ ul.slider li:target {
 }
 
 .listaPeliculas{
-    width: 99%;
-    margin-left: 4%;
-
+    width: 100%;
+    margin-left: 1.6%;
 }
 
 
@@ -960,11 +1010,9 @@ ul.slider li:target {
 }
 
 .columnaNovedades{
+    width: 12%;
     display: inline-block;
-    width: 13%;
-    transition: all 0.3s ease 0s;
-    margin: 0.4% 0%;
-    overflow: hidden;
+    margin: 1% 0% 0% 0%;
 }
 
 .columnaNovedades p{
@@ -981,7 +1029,6 @@ ul.slider li:target {
     width: 172.02px;
     height: 255.14px;
     border-radius: 10px;
-    margin-left: 6.5%;
     box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 
 
@@ -994,7 +1041,7 @@ ul.slider li:target {
     margin: 0% 0%;
     display: none;
     z-index: 10;
-    margin: -18.7vh 0%;
+    margin:-103px 0%;
     box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
     border-end-start-radius: 10px;
     border-end-end-radius: 10px;
@@ -1494,7 +1541,7 @@ ul.slider li:target {
     font-family: 'Montserrat';
 }
 
-input{
+.inputDatosPersonales{
     margin: 0%;
     border-radius: 5px;
     border-color: white;
@@ -1503,7 +1550,7 @@ input{
 }
 
 
-input:active{
+.inputDatosPersonales:active{
     border-style: outset;
     border-color: white;
     
@@ -1541,12 +1588,9 @@ hr{
 }
 
 .columnaGeneroMisPeliculas{
-    width: 13%;
+    width: 12%;
     display: inline-block;
-    margin-bottom: 5%;
-    margin: 1% 0% 0% 0%;
-
-
+    margin: 1% 0% 0% 0.06%;
   }
 
 
@@ -1564,7 +1608,7 @@ hr{
     width: 175px;
     height: 255px;
     border-radius: 10px;
-    margin: 0% 20%;
+    margin:  0% 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -1635,7 +1679,7 @@ hr{
     height: 100px;
     display: none;
     z-index: 10;
-    margin: -6.7% 0.0%;
+    margin: -105px 18px;
     box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
     border-end-start-radius: 10px;
     border-end-end-radius: 10px;
@@ -1784,6 +1828,154 @@ hr{
     }
 }
 
+
+/*-----------------------------------------------LISTAS-------------------------------------------------------------------------------------------------*/
+
+    .seccionListas{
+        position: absolute;
+        width: 80%;
+        height: auto;
+        margin: 0% 10%;
+        background-color: rgb(19, 25, 56, 0.85);
+    }
+
+    .encabezadoListas{
+        width: fit-content;
+        position: absolute;
+        height: auto;
+        color: white;
+        margin: 0% 0%;
+        top: 4%;
+        left: 1%;
+    }
+
+    .encabezadoListas h4{
+        font-family: 'Montserrat';
+        font-size: x-large;
+    }
+
+    .containerListas{
+        width: 98%;
+        height: auto;
+        margin: 8% 0% 0% 0%;
+
+    }
+
+    .filaListas{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 1%;
+    }
+
+    .lista{
+        width: 356.31px;
+        height: 270px;
+        background-color: rgb(44, 43, 43);
+        margin: 0% 10px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    }
+
+    .cuadradoImagenes{
+        width: 100%;
+        display: flex;
+        height: 60%;
+        background-color: grey;
+    }
+
+    .cuadradoImagenes img{
+        width: 25%;
+        height: 100%;
+        object-fit:cover ;
+    }
+    
+
+    .descripcionPrevLista{
+        width: 100%;
+        height: 40%;
+    }
+
+    .tituloPlaylist{
+        width: 100%;
+        display: block;
+        color: white;
+        font-family: 'Montserrat';
+        font-size: x-large;
+        margin: 3% 0%;
+    }
+
+    .tituloPlaylist a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .tituloPlaylist a:hover{
+        font-weight: bolder;
+    }
+
+    .tituloPlaylist p{
+        text-align: center;
+    }
+
+    .detallesUsuarioPlaylist{
+        display: flex;
+        
+    }
+
+    .imagenUsuarioPlaylist{
+        width: 50px;
+        height: 50px;
+        margin: 0% 0% 0% 2%;
+    }
+
+    .imagenUsuarioPlaylist img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .nombreUsuarioPlaylist{
+        width: fit-content;
+        color: white;
+        margin: 4% 2%;
+    }
+
+    .nombreUsuarioPlaylist p{
+        font-family: 'Montserrat';
+    }
+
+    .megustaPlaylist, .comentariosPlaylist{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin: 5% 2%;
+    }
+
+    .comentariosPlaylist{
+        margin: 5% 3%;
+    }
+
+    .megustaPlaylist img, .comentariosPlaylist img{
+        width: 15px;
+        height: 15px;
+        filter: brightness(0) invert(1);
+    }
+
+    .numeroMegustaPlaylist, .numeroComentariosPlaylist{
+        color: white;
+    }
+
+    .numeroMegustaPlaylist p{
+        font-family: 'Montserrat';
+        margin: 0% 25%;
+    }
+
+    .numeroComentariosPlaylist p{
+        font-family: 'Montserrat';
+    margin: 0% 40%;
+    }
+
 /*-----------------------------------------------RESPONSIVE TABLET----------------------------*/
 @media screen and (max-width: 768px) {
     header nav{
@@ -1895,7 +2087,7 @@ hr{
 
 
 /*-----------------------------------------------RESPONSIVE iPad----------------------------*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (device-aspect-ratio: 4/3) {
     header nav{
         display: block;
         width: 35%;
@@ -1933,7 +2125,6 @@ hr{
     .lupa{
         margin: -7% 0% 0% 170%;
         float: left;
-        
     }
 
     .user{
@@ -2261,6 +2452,7 @@ hr{
     .botonVerTodoMovil{
         display: block;
         margin: 0% 5%;
+        text-decoration: none;
     }
 
     .botonVerTodoMovil2{
@@ -2268,11 +2460,13 @@ hr{
         margin: 0% 5%;
         background-color: rgb(19, 25, 56);
         color: white;
+        text-decoration: none;
     }
 
     .botonVerTodoMovil3{
         display: block;
         margin: 0% 5%;
+        text-decoration: none;
     }
 
    .lasmasvistas{
