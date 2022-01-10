@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmnet</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JavaScript/myScript.js"></script>
+
+</head>
+
+<body> 
+    <header>
+        <div class="desplegableHeader">
+            <input type="image" src="css/align-justify-solid.svg"class="logoDesplegableHeader" onclick="desplegar()"/>
+            <div id="listaHeader">
+                <a href="Index.html"><img class="iconoMPeliculas" src="css/Logo.PNG"> Inicio</a>
+
+                <a href="Novedades.html"> <img class="iconoMPeliculas" src="css/Novedades_Lista_Header.svg">Novedades</a>
+
+                <a href="Mis_Peliculas.html"> <img class="iconoMPeliculas" src="css/heart-solid.svg"> Mis Películas</a>
+
+                <a href="" class="headerActive"><img class="iconoMPeliculas" src="css/globe-solid.svg">Explorar</a>
+            
+                <a href="Cuenta.html" ><img class="iconoMPeliculas" src="css/list-solid.svg">Listas</a>
+
+                <a href="Cuenta.html"><img class="iconoMPeliculas" src="css/user-circle-solid.svg">Cuenta</a>
+            </div>
+        </div>
+            
+
+        <div id="Logo">
+            <a href="Index.html">
+                <img src="css/Logo.PNG" alt=""> 
+            </a>
+            <a href="Index.html">
+                <h1 class="logoTexto"> FILMNET</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="Index.html" class="headerActive">Inicio</a>
+            <a href="Novedades.html" >Novedades</a>
+            <a href="Mis_Peliculas.html" >Mis Películas</a>
+            <a href="Explorar.html" >Explorar</a>
+            <a href="Listas.html" >Listas</a>
+        </nav>
+
+        <form class="buscarPelicula">
+            <input type="text" placeholder="Buscar.." id="inputBuscarPeliHeader" name="search">  
+            <button type="submit" id="lupa"><img src="css/search-solid.svg" alt=""></button> 
+        </form>
+
+        <div class="user">
+            <a href="Cuenta.html"><img src="css/user-circle-solid.svg" alt=""></a>  
+        </div>    
+
+    </header>
+
+    <main>
+
+        <section id="recomendacion">
+            <ul class="slider">
+                <li id="slide1">
+                    <div class="descripcionPeliPortada">
+                        <h1 class="tituloPortada">Dune</h1>
+                        <div class="añoGenDur">
+                            <p>2021</p>
+                            <p>Drama </p>
+                            <p>162min</p>
+                        </div>
+                        <a href="Dune.html"><button type="button" class="botonPortada1">Ver Ahora</button></a>
+                        <a href=""><button type="button" class="botonPortada2">Añadir a Lista</button></a>
+                    </div>
+                </li>
+                <li id="slide2">
+                    <div class="descripcionPeliPortada">
+                        <h1 class="tituloPortada">Last Night In Soho</h1>
+                        <div class="añoGenDur">
+                            <p>2021</p>
+                            <p>Drama </p>
+                            <p>140min</p>
+                        </div>
+                            <a href="Last_Night_In_Soho.html"><button type="button" class="botonPortada1">Ver Ahora</button></a>
+                            <a href=""><button type="button" class="botonPortada2">Añadir a Lista</button></a>
+                    </div>
+                </li>
+                <li id="slide3">
+                    <div class="descripcionPeliPortada">
+                        <h1 class="tituloPortada">Sin Tiempo Para Morir</h1>
+                        <div class="añoGenDur">
+                            <p>2021</p>
+                            <p>Drama </p>
+                            <p>120min</p>
+                        </div>
+                        <a href="Sin_Tiempo_Para_Morir.html"><button type="button" class="botonPortada1">Ver Ahora</button></a>
+                       <a href=""><button type="button" class="botonPortada2">Añadir a Lista</button></a> 
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class="botonesSlider">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+            </ul>
+        </section>
+             
+        <section id="banner1">
+            <div class="contenidoBanner1">
+
+                <div class="textoContenidoBanner1">
+                    <h1 id="titulobanner">Novedades</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod ea odit inventore aliquid doloribus voluptatibus, temporibus ipsam omnis beatae sapiente quam cum quibusdam voluptatem maiores
+                     eos repudiandae, unde consequuntur magni sequi iure tempore. Tenetur ut, labore natus adipisci hic vitae quis nostrum debitis aliquam necessitatibus omnis quam facere voluptate.</p>
+
+                    <a href="Novedades_Año.html">
+                        <button type="button">Ver todo</button>
+                    </a>
+                </div>
+                
+                <div class = "lasmasvistas">
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="descripcion">
+                                <div><a href=""><p class="notaPeli">6,6 / 10</p></a></div>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="Aves_de_Presa.html"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div> 
+                            <img src="css/Harley Quinn.jfif" alt="Aves de Presa" >
+                          </div>
+
+                          <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">7,2 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="Sin_Tiempo_Para_Morir.html"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://images3.alphacoders.com/106/thumb-1920-1064725.jpg" alt="Forest" >
+                          </div>
+
+                    </div>
+                    
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">7 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="Last_Night_In_Soho.html"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://cinemags.co.id/wp-content/uploads/2021/11/last-night-in-soho-watch-an-exclusive-clip-from-edgar-wright_77qw.jpg" alt="Mountains" >
+                          </div>
+
+                          <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">6 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href=""><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://www.themoviedb.org/t/p/original/v1g47X1SAXTNgtvdkOW6wWuDyMY.jpg" alt="Mountains">
+                          </div>
+                    </div>
+                      
+                </div>
+            
+            </div>   
+            <a href="Novedades_Año.html">
+                <button class="botonVerTodoMovil" type="button">Ver todo</button>
+            </a>
+        </section>
+
+        <section id="banner2">
+            <div class="contenidoBanner2">
+
+                <div class="textoContenidoBanner2">
+                    <h1 id="titulobanner">Lo Más Visto</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod ea odit inventore aliquid doloribus voluptatibus, temporibus ipsam omnis beatae sapiente quam cum quibusdam voluptatem maiores
+                     eos repudiandae, unde consequuntur magni sequi iure tempore. Tenetur ut, labore natus adipisci hic vitae quis nostrum debitis aliquam necessitatibus omnis quam facere voluptate.</p>
+
+                    <a href="Novedades_Vistas.html">
+                        <a href="Lo_Mas_Visto.html"><button type="button">Ver todo</button></a>
+                    </a>
+                </div>
+                
+                <div class = "lasmasvistas">
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">7,6 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="Blade_Runner_2049.html"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div> 
+                            <img src="https://occ-0-2031-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQgox-dDMrG-HdS4m74gz4NjZGEmVLOqfw1IDHVokowbwrQ2z5p5WHb-32DvyzhgesEdFOVItsYs6_mAUcGVu1iAnPQ.webp?r=1bb" alt="Snow" >
+                        </div>
+
+                          <div class="columna">
+                            <div class="descripcion">
+
+                                <p class="notaPeli">8 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="Erase_Una_Vez_en_Hollywood.html"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://occ-0-2031-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdKHaLJEbO_IxPzvolAmknOfZl0b5vDrHk_4--NiTdHrbd1WdDwoGlxzPslvFl5NsWnd1g172u-p4mesHPJJ-B_oYpg.webp?r=97c" alt="Forest" >
+                          </div>
+
+                    </div>
+                    
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">7 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="#"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://occ-0-2031-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQbO9VhFIMTeONy32ZUEr9Jph8C1n-oxMjduBts7G_GUhU7Q3DRrtuCSNOHcoOxd8n_vh6129NIcnsFhXOuKGwWdgwA.webp?r=14c" alt="Mountains" >
+                          </div>
+
+                          <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">8 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="#"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/ee7bd5b84c0a41d7380a21e4dc92dd9b6bcace8e651a1d353f7981a7727221b5._UR1920,1080_RI_SX356_FMjpg_.jpg" alt="Mountains">
+                          </div>
+                    </div>
+                      
+                </div>
+            </div>
+            <a href="Novedades_Año.html">
+                <button class="botonVerTodoMovil2" type="button">Ver todo</button>
+            </a>
+        </section>
+
+        <section id="banner3">
+            <div class="contenidoBanner3">
+
+                <div class="textoContenidoBanner3">
+                    <h1 id="titulobanner">Explorar</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod ea odit inventore aliquid doloribus voluptatibus, temporibus ipsam omnis beatae sapiente quam cum quibusdam voluptatem maiores
+                     eos repudiandae, unde consequuntur magni sequi iure tempore. Tenetur ut, labore natus adipisci hic vitae quis nostrum debitis aliquam necessitatibus omnis quam facere voluptate.</p>
+
+                    <a href="Explorar.html">
+                        <button type="button">Ver todo</button>
+                    </a>
+                </div>
+                
+                <div class = "lasmasvistas">
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">7,6 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="#"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div> 
+                            <img src="https://occ-0-2031-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVRJiFfCH9JaYZB4-sR4Knv_ORXaFiyANQmwVXQhOKFpdLVgmEcqH5l2D15Byop25RtTGEnX28LfnmoiKW4OcqLy2s0.webp?r=962" alt="Snow" >
+                          </div>
+
+                          <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">7,2 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="#"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://occ-0-2031-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUWF3l4IZi8IyYlSzhvyWkzMLtbpTYf09wC-HDJ5IE6c2fSZzLtvbKc70YuoWePxA86-fMn3iLEz-kBmuiIouYRgKuc.webp?r=1f9" alt="Forest" >
+                          </div>
+
+                    </div>
+                    
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">7 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="#"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://occ-0-2031-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRQ29Kc_mhEwjQGdDL_E9-kKMoUHSXPw-32gXZOnfs1dvjt6eIXXakQkfNmY-iBfR2ueS-pfE2FcZMm3rGwtBBLWNQw.webp?r=323" alt="Mountains" >
+                          </div>
+
+                          <div class="columna">
+                            <div class="descripcion">
+                                <p class="notaPeli">6 / 10</p>
+                                <div class ="imdbLogo"><img  src="css/imdb Logo.png" alt="Logo IMDb"></div>
+                                <div class ="logoCorazon" onclick="corazon()"></div>
+                                <div class ="logoCompartir"><img  src="css/Logo Compartir.svg" alt="Compartir"></div>
+                                <div class ="logoPlay"><a href="#"><img  src="css/play-solid.svg" alt="Reproducir"></a></div>
+                                <div class="logoEstrella" onclick="estrella()"></div>
+                            </div>
+                            <img src="https://occ-0-2031-360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe8Cnzf2BbFPpiVbUOapcG3ovXkOpJOoGGcDEENJgPjcfObP2zAEUE6TPhRohJcLFatTtLklNO38SznysjFTFDps8yQ.webp?r=1d8" alt="Mountains">
+                          </div>
+                    </div>
+                      
+                </div>
+                      
+                </div>
+            </div>
+            <a href="Explorar.html">
+                <button class="botonVerTodoMovil3" type="button">Ver todo</button>
+            </a>
+        </section>
+    </main>
+       
+    
+</body>
+    
+
+</html>

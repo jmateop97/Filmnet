@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuenta</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="JavaScript/myScript.js"></script>
 </head>
 <body>
@@ -21,8 +22,11 @@
 
                 <a href="Mis_Peliculas.html"> <img class="iconoMPeliculas" src="css/heart-solid.svg"> Mis Películas</a>
 
-                <a href="Cuenta.html"><img class="iconoMPeliculas" src="css/user-circle-solid.svg">Cuenta</a>
+                <a href="" class="headerActive"><img class="iconoMPeliculas" src="css/globe-solid.svg">Explorar</a>
+            
+                <a href="Cuenta.html" ><img class="iconoMPeliculas" src="css/list-solid.svg">Listas</a>
 
+                <a href="Cuenta.html"><img class="iconoMPeliculas" src="css/user-circle-solid.svg">Cuenta</a>
             </div>
         </div>
             
@@ -40,12 +44,17 @@
             <a href="Novedades.html" >Novedades</a>
             <a href="Mis_Peliculas.html" >Mis Películas</a>
             <a href="Explorar.html" >Explorar</a>
-            <a href="" >Listas</a>
-            <a href=""class="lupa"><img src="css/search-solid.svg" alt=""></a>
-            <a href="Cuenta.html" class="user"class="headerActive"><img src="css/user-circle-solid.svg" alt=""></a>
-
+            <a href="Listas.html" >Listas</a>
         </nav>
 
+        <form class="buscarPelicula">
+            <input type="text" placeholder="Buscar.." id="inputBuscarPeliHeader" name="search">  
+            <button type="submit" id="lupa"><img src="css/search-solid.svg" alt=""></button> 
+        </form>
+
+        <div class="user">
+            <a href="Cuenta.html"><img src="css/user-circle-solid.svg" alt=""></a>  
+        </div>    
     </header>
 
     <main>
@@ -72,12 +81,12 @@
 
                         <div class="nombreFormulario">
                             <p class="fname">Nombre:</p><br>
-                            <input type="text" name="nombre" placeholder="Escriba su nombre"><br>
+                            <input type="text" name="nombre" class="inputDatosPersonales" placeholder="Escriba su nombre"><br>
                         </div>
 
                         <div class="apellidoFormulario">
                             <p class="fname">Apellido:</p><br>
-                            <input type="text" id="lmname" name="fname" placeholder="Escriba su apellido"><br>
+                            <input type="text" id="lmname" name="fname" class="inputDatosPersonales" placeholder="Escriba su apellido"><br>
                         </div>
 
                   </form>
@@ -88,12 +97,12 @@
 
                     <div class="nombreFormulario">
                         <p class="fname">Correo Electrónico:</p><br>
-                        <input type="email" name="nombre" placeholder="Escriba su correo"><br>
+                        <input type="email" name="nombre" class="inputDatosPersonales" placeholder="Escriba su correo"><br>
                     </div>
 
                     <div class="apellidoFormulario">
                         <p class="fname">Teléfono:</p><br>
-                        <input type="tel" id="lmname" name="fname" placeholder="Escriba su teléfono"><br>
+                        <input type="tel" id="lmname" name="fname" class="inputDatosPersonales" placeholder="Escriba su teléfono"><br>
                     </div>
 
               </form>

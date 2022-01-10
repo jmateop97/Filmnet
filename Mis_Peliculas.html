@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Películas</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="JavaScript/myScript.js"></script>
 </head>
 <body>
@@ -19,8 +20,11 @@
 
                 <a href="Mis_Peliculas.html"> <img class="iconoMPeliculas" src="css/heart-solid.svg"> Mis Películas</a>
 
-                <a href="Cuenta.html"><img class="iconoMPeliculas" src="css/user-circle-solid.svg">Cuenta</a>
+                <a href="" class="headerActive"><img class="iconoMPeliculas" src="css/globe-solid.svg">Explorar</a>
+            
+                <a href="Cuenta.html" ><img class="iconoMPeliculas" src="css/list-solid.svg">Listas</a>
 
+                <a href="Cuenta.html"><img class="iconoMPeliculas" src="css/user-circle-solid.svg">Cuenta</a>
             </div>
         </div>
             
@@ -38,11 +42,17 @@
             <a href="Novedades.html" >Novedades</a>
             <a href="Mis_Peliculas.html" class="headerActive">Mis Películas</a>
             <a href="Explorar.html" >Explorar</a>
-            <a href="Cuenta.html" >Listas</a>
-            <a href=""class="lupa"><img src="css/search-solid.svg" alt=""></a>
-            <a href="Cuenta.html" class="user"><img src="css/user-circle-solid.svg" alt=""></a>
-
+            <a href="Listas.html" >Listas</a>
         </nav>
+
+        <form class="buscarPelicula">
+            <input type="text" placeholder="Buscar.." id="inputBuscarPeliHeader" name="search">  
+            <button type="submit" id="lupa"><img src="css/search-solid.svg" alt=""></button> 
+        </form>
+
+        <div class="user">
+            <a href="Cuenta.html"><img src="css/user-circle-solid.svg" alt=""></a>  
+        </div>    
 
     </header>
 

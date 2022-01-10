@@ -7,7 +7,9 @@
     <title>Filmnet-Listas</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="JavaScript/myScript.js"></script>
+
 </head>
 
 <body> 
@@ -43,21 +45,588 @@
             <a href="Novedades.html" >Novedades</a>
             <a href="Mis_Peliculas.html" >Mis Películas</a>
             <a href="Explorar.html" >Explorar</a>
-            <a href="Listas.html" class="headerActive">Listas</a>
-            <a href=""class="lupa"><img src="css/search-solid.svg" alt=""></a>
-            <a href="Cuenta.html" class="user"><img src="css/user-circle-solid.svg" alt=""></a>
-
+            <a href="Cuenta.html" class="headerActive">Listas</a>
         </nav>
 
+        <form class="buscarPelicula">
+            <input type="text" placeholder="Buscar.." id="inputBuscarPeliHeader" name="search">  
+            <button type="submit" id="lupa"><img src="css/search-solid.svg" alt=""></button> 
+        </form>
+
+        <div class="user">
+            <a href="Cuenta.html"><img src="css/user-circle-solid.svg" alt=""></a>  
+        </div>    
     </header>
 
-    <main>
+<main>
+    <a class="volverArriba" href="#top">
+        <img src="css/chevron-up-solid.svg" alt="">
+    </a>
+    <section class="seccionListas">
+            <div class="encabezadoListas">
+                <h4>Listas</h4>
+            </div>
 
-        <ul>
-            <li></li>
-        </ul>
+            <div class="containerListas">
+                <div class="filaListas">
+                    <div class="lista">
+                        <div class="cuadradoImagenes">
+                            <img src="https://pics.filmaffinity.com/Venganza-598020426-large.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/john_wick-166872838-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/rambo_last_blood-756933079-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/the_transporter-475604999-mmed.jpg" alt="">
+                        </div>
 
-    </main>
+                        <div class="descripcionPrevLista">
+                            <div class="tituloPlaylist"><a href=""><p>Acción sin parar</p></a></div>
+                            <div class="detallesUsuarioPlaylist">
+                                <div class="imagenUsuarioPlaylist">
+                                    <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/05/john-wick-2339245.jpg?itok=xjuRi9i7" alt="">
+                                </div>
+                                <div class="nombreUsuarioPlaylist">
+                                    <p>jesusmp97</p>
+                                </div>
+                                <div class="megustaPlaylist">
+                                    <img src="css/heart-solid.svg" alt="">
+                                    <div class="numeroMegustaPlaylist">
+                                        <p>368</p>
+                                    </div>
+                                </div>
+                                <div class="comentariosPlaylist">
+                                    <img src="css/comment-solid.svg" alt="">
+                                    <div class="numeroComentariosPlaylist">
+                                        <p>52</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="lista">
+                        <div class="cuadradoImagenes">
+                            <img src="https://pics.filmaffinity.com/reservoir_dogs-904905830-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/kill_bill_volume_1_aka_kill_bill_vol_1-216872360-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/inglourious_basterds-976286054-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/once_upon_a_time_in_hollywood-987163522-mmed.jpg" alt="">
+                        </div>
+
+                        <div class="descripcionPrevLista">
+                            <div class="tituloPlaylist"><a href=""><p>Tarantino</p></a></div>
+                            <div class="detallesUsuarioPlaylist">
+                                <div class="imagenUsuarioPlaylist">
+                                    <img src="https://www.nme.com/wp-content/uploads/2016/09/2014TheHungerGamesLionsgate-696x486.png" alt="">
+                                </div>
+                                <div class="nombreUsuarioPlaylist">
+                                    <p>sweet_kristy</p>
+                                </div>
+                                <div class="megustaPlaylist">
+                                    <img src="css/heart-solid.svg" alt="">
+                                    <div class="numeroMegustaPlaylist">
+                                        <p>543</p>
+                                    </div>
+                                </div>
+                                <div class="comentariosPlaylist">
+                                    <img src="css/comment-solid.svg" alt="">
+                                    <div class="numeroComentariosPlaylist">
+                                        <p>110</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        </div>
+
+                        <div class="lista">
+                            <div class="cuadradoImagenes">
+                                <img src="https://pics.filmaffinity.com/blade_runner-351607743-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/i_robot-964272233-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/t2_terminator_2_judgment_day-825143697-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/after_earth-859495433-mmed.jpg" alt="">
+                            </div>
+
+                            <div class="descripcionPrevLista">
+                                <div class="tituloPlaylist"><a href=""><p>Mundos distópicos</p></a></div>
+                                <div class="detallesUsuarioPlaylist">
+                                    <div class="imagenUsuarioPlaylist">
+                                        <img src="https://media.revistagq.com/photos/5d3abfd13b83c000083d26ee/1:1/w_1800,h_1800,c_limit/once-upon-a-time-in-hollywood-qt9_r_00153.jpg" alt="">
+                                    </div>
+                                    <div class="nombreUsuarioPlaylist">
+                                        <p>luisHdez20</p>
+                                    </div>
+                                    <div class="megustaPlaylist">
+                                        <img src="css/heart-solid.svg" alt="">
+                                        <div class="numeroMegustaPlaylist">
+                                            <p>543</p>
+                                        </div>
+                                    </div>
+                                    <div class="comentariosPlaylist">
+                                        <img src="css/comment-solid.svg" alt="">
+                                        <div class="numeroComentariosPlaylist">
+                                            <p>110</p>
+                                        </div>
+                                    </div>
+                                </div>
+                         </div>
+                    
+                        </div>
+
+                        <div class="lista">
+                            <div class="cuadradoImagenes">
+                                <img src="https://pics.filmaffinity.com/doragon_boru_cho_burori-949664812-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/yojinbo_yojimbo_the_bodyguard-964803518-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/kimi_no_na_wa_your_name-612760352-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/kakushi_toride_no_san_akunin_the_hidden_fortress-752949972-mmed.jpg" alt="">
+                            </div>
+
+                            <div class="descripcionPrevLista">
+                                <div class="tituloPlaylist"><a href=""><p>Made in Japan</p></a></div>
+                                <div class="detallesUsuarioPlaylist">
+                                    <div class="imagenUsuarioPlaylist">
+                                        <img src="https://media.istockphoto.com/photos/portrait-of-a-smiling-student-at-the-city-street-picture-id1147289240?k=20&m=1147289240&s=612x612&w=0&h=sEx-9oXUdDRMqZF0o1viaumUjAud3Lsr9QxWAqrW3ks=" alt="">
+                                    </div>
+                                    <div class="nombreUsuarioPlaylist">
+                                        <p>BadKarma</p>
+                                    </div>
+                                    <div class="megustaPlaylist">
+                                        <img src="css/heart-solid.svg" alt="">
+                                        <div class="numeroMegustaPlaylist">
+                                            <p>226</p>
+                                        </div>
+                                    </div>
+                                    <div class="comentariosPlaylist">
+                                        <img src="css/comment-solid.svg" alt="">
+                                        <div class="numeroComentariosPlaylist">
+                                            <p>35</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                </div>
+            </div>
+
+            <div class="filaListas">
+                    <div class="lista">
+                        <div class="cuadradoImagenes">
+                            <img src="https://pics.filmaffinity.com/gisaengchung-610652607-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/blade_runner_2049-681477614-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/scarface-798722679-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/gran_torino-278262332-mmed.jpg" alt="">
+                        </div>
+
+                        <div class="descripcionPrevLista">
+                            <div class="tituloPlaylist"><a href=""><p>Mis Favoritas</p></a></div>
+                            <div class="detallesUsuarioPlaylist">
+                                <div class="imagenUsuarioPlaylist">
+                                    <img src="https://i.blogs.es/b907d3/harrison-ford-blade-runner/1366_2000.jpg" alt="">
+                                </div>
+                                <div class="nombreUsuarioPlaylist">
+                                    <p>anonymouse</p>
+                                </div>
+                                <div class="megustaPlaylist">
+                                    <img src="css/heart-solid.svg" alt="">
+                                    <div class="numeroMegustaPlaylist">
+                                        <p>50</p>
+                                    </div>
+                                </div>
+                                <div class="comentariosPlaylist">
+                                    <img src="css/comment-solid.svg" alt="">
+                                    <div class="numeroComentariosPlaylist">
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="lista">
+                        <div class="cuadradoImagenes">
+                            <img src="https://pics.filmaffinity.com/the_martian-972637166-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/2001_a_space_odyssey-322989452-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/gravity-595126003-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/star_trek_star_trek_xi-815589716-mmed.jpg" alt="">
+                        </div>
+
+                        <div class="descripcionPrevLista">
+                            <div class="tituloPlaylist"><a href=""><p>Al espacio</p></a></div>
+                            <div class="detallesUsuarioPlaylist">
+                                <div class="imagenUsuarioPlaylist">
+                                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/B3D7/production/_110093064_ennotimetodie.jpg" alt="">
+                                </div>
+                                <div class="nombreUsuarioPlaylist">
+                                    <p>08_maria_96</p>
+                                </div>
+                                <div class="megustaPlaylist">
+                                    <img src="css/heart-solid.svg" alt="">
+                                    <div class="numeroMegustaPlaylist">
+                                        <p>420</p>
+                                    </div>
+                                </div>
+                                <div class="comentariosPlaylist">
+                                    <img src="css/comment-solid.svg" alt="">
+                                    <div class="numeroComentariosPlaylist">
+                                        <p>97</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        </div>
+
+                        <div class="lista">
+                            <div class="cuadradoImagenes">
+                                <img src="https://pics.filmaffinity.com/up-672315222-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/cars-746710621-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/monsters_inc-336355219-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/toy_story-626273371-mmed.jpg" alt="">
+                            </div>
+
+                            <div class="descripcionPrevLista">
+                                <div class="tituloPlaylist"><a href=""><p>Todo Pixar</p></a></div>
+                                <div class="detallesUsuarioPlaylist">
+                                    <div class="imagenUsuarioPlaylist">
+                                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                    </div>
+                                    <div class="nombreUsuarioPlaylist">
+                                        <p>Hel3n_03</p>
+                                    </div>
+                                    <div class="megustaPlaylist">
+                                        <img src="css/heart-solid.svg" alt="">
+                                        <div class="numeroMegustaPlaylist">
+                                            <p>543</p>
+                                        </div>
+                                    </div>
+                                    <div class="comentariosPlaylist">
+                                        <img src="css/comment-solid.svg" alt="">
+                                        <div class="numeroComentariosPlaylist">
+                                            <p>110</p>
+                                        </div>
+                                    </div>
+                                </div>
+                         </div>
+                    
+                        </div>
+
+                        <div class="lista">
+                            <div class="cuadradoImagenes">
+                                <img src="https://pics.filmaffinity.com/drive-467825966-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/moneyball-572287299-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/ford_v_ferrari-929107889-mmed.jpg" alt="">
+                                <img src="https://pics.filmaffinity.com/arrival-150207636-mmed.jpg" alt="">
+                            </div>
+
+                            <div class="descripcionPrevLista">
+                                <div class="tituloPlaylist"><a href=""><p>Infravaloradas</p></a></div>
+                                <div class="detallesUsuarioPlaylist">
+                                    <div class="imagenUsuarioPlaylist">
+                                        <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/05/john-wick-2339245.jpg?itok=xjuRi9i7" alt="">
+                                    </div>
+                                    <div class="nombreUsuarioPlaylist">
+                                        <p>jesusmp97</p>
+                                    </div>
+                                    <div class="megustaPlaylist">
+                                        <img src="css/heart-solid.svg" alt="">
+                                        <div class="numeroMegustaPlaylist">
+                                            <p>368</p>
+                                        </div>
+                                    </div>
+                                    <div class="comentariosPlaylist">
+                                        <img src="css/comment-solid.svg" alt="">
+                                        <div class="numeroComentariosPlaylist">
+                                            <p>52</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+            </div>
+
+            <div class="filaListas">
+                <div class="lista">
+                    <div class="cuadradoImagenes">
+                        <img src="https://pics.filmaffinity.com/the_godfather-488102675-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/the_shawshank_redemption-576140557-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/goodfellas-722948658-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/interstellar-366875261-mmed.jpg" alt="">
+                    </div>
+
+                    <div class="descripcionPrevLista">
+                        <div class="tituloPlaylist"><a href=""><p>Lo mejor de IMDb</p></a></div>
+                        <div class="detallesUsuarioPlaylist">
+                            <div class="imagenUsuarioPlaylist">
+                                <img src="https://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/35/91/08/18453821.jpg" alt="">
+                            </div>
+                            <div class="nombreUsuarioPlaylist">
+                                <p>thegodfatherpart4</p>
+                            </div>
+                            <div class="megustaPlaylist">
+                                <img src="css/heart-solid.svg" alt="">
+                                <div class="numeroMegustaPlaylist">
+                                    <p>368</p>
+                                </div>
+                            </div>
+                            <div class="comentariosPlaylist">
+                                <img src="css/comment-solid.svg" alt="">
+                                <div class="numeroComentariosPlaylist">
+                                    <p>52</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="lista">
+                    <div class="cuadradoImagenes">
+                        <img src="https://pics.filmaffinity.com/titanic-321994924-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/pretty_woman-629528349-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/dirty_dancing-466465576-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/casablanca-612211000-mmed.jpg" alt="">
+                    </div>
+
+                    <div class="descripcionPrevLista">
+                        <div class="tituloPlaylist"><a href=""><p>Clásicos románticos</p></a></div>
+                        <div class="detallesUsuarioPlaylist">
+                            <div class="imagenUsuarioPlaylist">
+                                <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            </div>
+                            <div class="nombreUsuarioPlaylist">
+                                <p>fast_and_curious</p>
+                            </div>
+                            <div class="megustaPlaylist">
+                                <img src="css/heart-solid.svg" alt="">
+                                <div class="numeroMegustaPlaylist">
+                                    <p>570</p>
+                                </div>
+                            </div>
+                            <div class="comentariosPlaylist">
+                                <img src="css/comment-solid.svg" alt="">
+                                <div class="numeroComentariosPlaylist">
+                                    <p>122</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    </div>
+
+                    <div class="lista">
+                        <div class="cuadradoImagenes">
+                            <img src="https://pics.filmaffinity.com/the_revenant-498846647-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/shutter_island-215721197-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/once_upon_a_time_in_hollywood-987163522-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/titanic-321994924-mmed.jpg" alt="">
+                        </div>
+
+                        <div class="descripcionPrevLista">
+                            <div class="tituloPlaylist"><a href=""><p>Dicaprio showcase</p></a></div>
+                            <div class="detallesUsuarioPlaylist">
+                                <div class="imagenUsuarioPlaylist">
+                                    <img src="https://images.pexels.com/photos/868113/pexels-photo-868113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                </div>
+                                <div class="nombreUsuarioPlaylist">
+                                    <p>jammie_P_90</p>
+                                </div>
+                                <div class="megustaPlaylist">
+                                    <img src="css/heart-solid.svg" alt="">
+                                    <div class="numeroMegustaPlaylist">
+                                        <p>343</p>
+                                    </div>
+                                </div>
+                                <div class="comentariosPlaylist">
+                                    <img src="css/comment-solid.svg" alt="">
+                                    <div class="numeroComentariosPlaylist">
+                                        <p>60</p>
+                                    </div>
+                                </div>
+                            </div>
+                     </div>
+                
+                    </div>
+
+                    <div class="lista">
+                        <div class="cuadradoImagenes">
+                            <img src="https://pics.filmaffinity.com/creed-232228847-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/the_fighter-295947851-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/raging_bull-820857019-mmed.jpg" alt="">
+                            <img src="https://pics.filmaffinity.com/gladiator-564554218-mmed.jpg" alt="">
+                        </div>
+
+                        <div class="descripcionPrevLista">
+                            <div class="tituloPlaylist"><a href=""><p>Combates</p></a></div>
+                            <div class="detallesUsuarioPlaylist">
+                                <div class="imagenUsuarioPlaylist">
+                                    <img src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/151331-tv-feature-what-is-the-best-order-to-watch-the-rocky-movies-image1-y39ixawpmf.jpg" alt="">
+                                </div>
+                                <div class="nombreUsuarioPlaylist">
+                                    <p>raul_GTR</p>
+                                </div>
+                                <div class="megustaPlaylist">
+                                    <img src="css/heart-solid.svg" alt="">
+                                    <div class="numeroMegustaPlaylist">
+                                        <p>250</p>
+                                    </div>
+                                </div>
+                                <div class="comentariosPlaylist">
+                                    <img src="css/comment-solid.svg" alt="">
+                                    <div class="numeroComentariosPlaylist">
+                                        <p>48</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+        </div>
+
+        <div class="filaListas">
+            <div class="lista">
+                <div class="cuadradoImagenes">
+                    <img src="https://pics.filmaffinity.com/Venganza-598020426-large.jpg" alt="">
+                    <img src="https://pics.filmaffinity.com/john_wick-166872838-mmed.jpg" alt="">
+                    <img src="https://pics.filmaffinity.com/rambo_last_blood-756933079-mmed.jpg" alt="">
+                    <img src="https://pics.filmaffinity.com/the_transporter-475604999-mmed.jpg" alt="">
+                </div>
+
+                <div class="descripcionPrevLista">
+                    <div class="tituloPlaylist"><a href=""><p>Acción sin parar</p></a></div>
+                    <div class="detallesUsuarioPlaylist">
+                        <div class="imagenUsuarioPlaylist">
+                            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/05/john-wick-2339245.jpg?itok=xjuRi9i7" alt="">
+                        </div>
+                        <div class="nombreUsuarioPlaylist">
+                            <p>jesusmp97</p>
+                        </div>
+                        <div class="megustaPlaylist">
+                            <img src="css/heart-solid.svg" alt="">
+                            <div class="numeroMegustaPlaylist">
+                                <p>368</p>
+                            </div>
+                        </div>
+                        <div class="comentariosPlaylist">
+                            <img src="css/comment-solid.svg" alt="">
+                            <div class="numeroComentariosPlaylist">
+                                <p>52</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="lista">
+                <div class="cuadradoImagenes">
+                    <img src="https://pics.filmaffinity.com/reservoir_dogs-904905830-mmed.jpg" alt="">
+                    <img src="https://pics.filmaffinity.com/kill_bill_volume_1_aka_kill_bill_vol_1-216872360-mmed.jpg" alt="">
+                    <img src="https://pics.filmaffinity.com/inglourious_basterds-976286054-mmed.jpg" alt="">
+                    <img src="https://pics.filmaffinity.com/once_upon_a_time_in_hollywood-987163522-mmed.jpg" alt="">
+                </div>
+
+                <div class="descripcionPrevLista">
+                    <div class="tituloPlaylist"><a href=""><p>Tarantino</p></a></div>
+                    <div class="detallesUsuarioPlaylist">
+                        <div class="imagenUsuarioPlaylist">
+                            <img src="https://www.nme.com/wp-content/uploads/2016/09/2014TheHungerGamesLionsgate-696x486.png" alt="">
+                        </div>
+                        <div class="nombreUsuarioPlaylist">
+                            <p>sweet_kristy</p>
+                        </div>
+                        <div class="megustaPlaylist">
+                            <img src="css/heart-solid.svg" alt="">
+                            <div class="numeroMegustaPlaylist">
+                                <p>543</p>
+                            </div>
+                        </div>
+                        <div class="comentariosPlaylist">
+                            <img src="css/comment-solid.svg" alt="">
+                            <div class="numeroComentariosPlaylist">
+                                <p>110</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+
+                <div class="lista">
+                    <div class="cuadradoImagenes">
+                        <img src="https://pics.filmaffinity.com/blade_runner-351607743-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/i_robot-964272233-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/t2_terminator_2_judgment_day-825143697-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/after_earth-859495433-mmed.jpg" alt="">
+                    </div>
+
+                    <div class="descripcionPrevLista">
+                        <div class="tituloPlaylist"><a href=""><p>Mundos distópicos</p></a></div>
+                        <div class="detallesUsuarioPlaylist">
+                            <div class="imagenUsuarioPlaylist">
+                                <img src="https://media.revistagq.com/photos/5d3abfd13b83c000083d26ee/1:1/w_1800,h_1800,c_limit/once-upon-a-time-in-hollywood-qt9_r_00153.jpg" alt="">
+                            </div>
+                            <div class="nombreUsuarioPlaylist">
+                                <p>luisHdez20</p>
+                            </div>
+                            <div class="megustaPlaylist">
+                                <img src="css/heart-solid.svg" alt="">
+                                <div class="numeroMegustaPlaylist">
+                                    <p>543</p>
+                                </div>
+                            </div>
+                            <div class="comentariosPlaylist">
+                                <img src="css/comment-solid.svg" alt="">
+                                <div class="numeroComentariosPlaylist">
+                                    <p>110</p>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+            
+                </div>
+
+                <div class="lista">
+                    <div class="cuadradoImagenes">
+                        <img src="https://pics.filmaffinity.com/Venganza-598020426-large.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/john_wick-166872838-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/rambo_last_blood-756933079-mmed.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/the_transporter-475604999-mmed.jpg" alt="">
+                    </div>
+
+                    <div class="descripcionPrevLista">
+                        <div class="tituloPlaylist"><a href=""><p>Acción sin parar</p></a></div>
+                        <div class="detallesUsuarioPlaylist">
+                            <div class="imagenUsuarioPlaylist">
+                                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/05/john-wick-2339245.jpg?itok=xjuRi9i7" alt="">
+                            </div>
+                            <div class="nombreUsuarioPlaylist">
+                                <p>jesusmp97</p>
+                            </div>
+                            <div class="megustaPlaylist">
+                                <img src="css/heart-solid.svg" alt="">
+                                <div class="numeroMegustaPlaylist">
+                                    <p>368</p>
+                                </div>
+                            </div>
+                            <div class="comentariosPlaylist">
+                                <img src="css/comment-solid.svg" alt="">
+                                <div class="numeroComentariosPlaylist">
+                                    <p>52</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+    </div>
+
+            
+
+
+            
+    </section>
+
+</main>
        
     
 </body>

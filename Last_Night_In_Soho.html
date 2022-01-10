@@ -6,22 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last Night In Soho</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JavaScript/myScript.js"></script>
 </head>
 <body>
     <header class="HeaderReproduccion">
 
-        <a href="Index.html" id="Logo">
+        <div class="desplegableHeader">
+            <input type="image" src="css/align-justify-solid.svg"class="logoDesplegableHeader" onclick="desplegar()"/>
+            <div id="listaHeader">
+                <a href="Index.html"><img class="iconoMPeliculas" src="css/Logo.PNG"> Inicio</a>
+
+                <a href="Novedades.html"> <img class="iconoMPeliculas" src="css/Novedades_Lista_Header.svg">Novedades</a>
+
+                <a href="Mis_Peliculas.html"> <img class="iconoMPeliculas" src="css/heart-solid.svg"> Mis Películas</a>
+
+                <a href="" class="headerActive"><img class="iconoMPeliculas" src="css/globe-solid.svg">Explorar</a>
             
-            <img src="css/Logo.PNG" alt=""> 
-            <h1 class="logoTexto"> FILMNET</h1>
-        </a>
+                <a href="Cuenta.html" ><img class="iconoMPeliculas" src="css/list-solid.svg">Listas</a>
+
+                <a href="Cuenta.html"><img class="iconoMPeliculas" src="css/user-circle-solid.svg">Cuenta</a>
+            </div>
+        </div>
+            
+
+        <div id="Logo">
+            <a href="Index.html">
+                <img src="css/Logo.PNG" alt=""> 
+            </a>
+            <a href="Index.html">
+                <h1 class="logoTexto"> FILMNET</h1>
+            </a>
+        </div>
         <nav>
-            <a href="Index.html" >Inicio</a>
+            <a href="Index.html" class="headerActive">Inicio</a>
             <a href="Novedades.html" >Novedades</a>
-            <a href="" >Mis Películas</a>
-            <a href="" >Cuenta</a>
+            <a href="Mis_Peliculas.html" >Mis Películas</a>
+            <a href="Explorar.html" >Explorar</a>
+            <a href="Listas.html" >Listas</a>
         </nav>
 
+        <form class="buscarPelicula">
+            <input type="text" placeholder="Buscar.." id="inputBuscarPeliHeader" name="search">  
+            <button type="submit" id="lupa"><img src="css/search-solid.svg" alt=""></button> 
+        </form>
+
+        <div class="user">
+            <a href="Cuenta.html"><img src="css/user-circle-solid.svg" alt=""></a>  
+        </div>    
     </header>
 
     <main>
