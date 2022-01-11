@@ -615,7 +615,9 @@ ul.slider li:target {
     text-decoration: none;
 }
 
-
+#banner1 a, #banner2 a, #banner3 a{
+    text-decoration: none;
+}
 
 .lasmasvistas {
     padding-top: 1%;
@@ -1679,7 +1681,7 @@ hr{
     height: 100px;
     display: none;
     z-index: 10;
-    margin: -105px 18px;
+    margin: -6.7% 0.0%;
     box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
     border-end-start-radius: 10px;
     border-end-end-radius: 10px;
@@ -2347,19 +2349,37 @@ hr{
 
     header{
         width: 100vw;
-        height: 35px;
+        height: 50px;
         position: fixed;
     }
 
+    #lupa{
+        display: none;
+    }
+
+    .user{
+        display: none;
+    }
+
     .desplegableHeader{
+        margin: 12.5px 2%;
         display: block;
-        width: 20px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .logoDesplegableHeader{
+        width: 25px;
+        margin: auto;
+        height: 25px;
+        filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg
+    );
     }
 
     #listaHeader{
         width: 100vw;
         height: 360px;
-        margin: -6px 0% 0% 0vw;
+        margin: 7px 0% 0% -8px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
         border: none;
@@ -2384,7 +2404,7 @@ hr{
     }
 
     #Logo{
-        margin: auto;
+        margin: 12.5px 26%;
         padding: 0%;
     }
 
@@ -2402,8 +2422,9 @@ hr{
 
     .tituloPortada{
         font-size: 45px;
-        width: 90%;
-        height: 150px;
+        width: 40%;
+        height: 70px;
+        margin: 25% 0% 0% 0%;
     }
 
     .botonesSlider{
@@ -2452,7 +2473,6 @@ hr{
     .botonVerTodoMovil{
         display: block;
         margin: 0% 5%;
-        text-decoration: none;
     }
 
     .botonVerTodoMovil2{
@@ -2460,13 +2480,147 @@ hr{
         margin: 0% 5%;
         background-color: rgb(19, 25, 56);
         color: white;
-        text-decoration: none;
     }
 
     .botonVerTodoMovil3{
         display: block;
         margin: 0% 5%;
+    }
+
+    #novedades{
+        width: 100%;
+        padding-top: 50px;
+        margin: 0% 0%;
+        background-color: rgba(19, 25, 56, 0.82);
+        display: inline-block;
+    }
+
+    .misPeliculas, .explorar,.seccionListas {
+        display: block;
+        width: 100%;
+        padding-top: 50px;
+        margin: 0%;
+        background-color: rgba(19, 25, 56, 0.82);
+        display: inline-block;
+    }
+    
+
+    #novedades h4, .misPeliculas h4, .explorar h4 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: x-large;
+        top: 60px;
+        left: 10px;
+    }
+
+    .encabezadoListas {
+        width: 70px;
+        height: 30px;
+        top: 60px;
+        left: 10px;
+    }
+
+    .containerListas {
+        width: 100%;
+        height: auto;
+        margin: 15% 0% 0% 0%;
+    }
+
+    .filaListas {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0% 0%;
+    }
+
+    .lista{
+        margin: 5.7% 5.7%;
+    }
+
+    .seleccionMisPeliculas, .seleccionExplorar {
+        width: 95%;
+        display: flex;
+        color: white;
+        font-family: Montserrat;
+        margin: 11% 2.5%;
+        position: absolute;
+    }
+
+    .seleccionMisPeliculas a {
+        display: inline-block;
+        color: white;
+        margin: 2% 0% 0%;
         text-decoration: none;
+        padding: 2% 2% 1%;
+        border-bottom: 1px solid rgb(150, 150, 150);
+    }
+
+    .seleccionExplorar{
+        width: 95%;
+        margin: 10% 0% 0% 0%;
+        overflow: auto;
+        white-space: nowrap;
+        
+    }
+    .seleccionExplorar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .logoPlayExplorar{
+        margin:-100px 0px;
+    }
+
+    .volverArriba{
+        top: 90%;
+        left: 80%;
+    }
+
+    .listaPeliculas {
+        width: 97%;
+        margin: 10% 0% 0% 3%;
+    }
+
+    .listaMisPeliculas {
+        width: 97%;
+        padding-top: 25%;
+        margin-left: 3%;
+    }
+
+    .columnaNovedades, .columnaGeneroMisPeliculas, .columnaGeneroExplorar {
+        width: 44%;
+        display: inline-block;
+        margin: 2% 2%;
+    }
+
+    .columnaNovedades img, .columnaGeneroMisPeliculas img, .columnaGeneroExplorar img {
+        width: 172.015px;
+        margin: auto;
+        height: 255.35px;
+        border-radius: 10px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    }
+
+    .imdbLogoNovedades img, .imdbLogoMisPeliculas img {
+        width: 55px;
+        height: 21.53px;
+        margin: auto;
+        box-shadow: none;
+    }
+
+    .logoPlayMisPeliculas {
+        position: absolute;
+        width: 173px;
+        height: 100px;
+        display: none;
+        z-index: 10;
+        margin: -103px 0%;
+        box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+        border-end-start-radius: 10px;
+        border-end-end-radius: 10px;
+        background-color: rgba(24, 24, 24, 0.882);
+        animation: 250ms ease-in-out 0s 1 normal none running despliegueDatosPelis;
+        transform-origin: 0% 100%;
     }
 
    .lasmasvistas{
@@ -2502,14 +2656,6 @@ hr{
        text-align: start;
    }
 
-   .listaMisPeliculas{
-        width: 100%;
-        white-space: nowrap;
-        overflow-y: hidden;
-        overflow-x: auto;
-        background-color: rgb(15,26,56,85%);
-        margin: 0%;
-    }
 
    .ajustesCuenta{
        margin: -90% 0% 0% 30% ;
