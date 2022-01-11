@@ -2762,8 +2762,7 @@ hr{
     .videoFondo {
         object-fit: cover;
         width: 100vw;
-        height: 100vh;
-        margin: -5px 0% 0%;
+        margin: -25px 0% 0%;
         height: calc(100% - 50px);
     }
 
@@ -2778,6 +2777,7 @@ hr{
     }
 
     .descripcionPeliPortadaReproducir {
+        display: block;
         position: absolute;
         z-index: 5;
         top: 0%;
@@ -2789,7 +2789,7 @@ hr{
     .fas-fa-play {
         width: 10%;
         position: absolute;
-        top: 37%;
+        top: 29%;
         left: 30%;
     }
 
@@ -2811,6 +2811,21 @@ hr{
         color: white;
         font-family: 'Montserrat';
         text-decoration: none;
+    }
+
+    .infoDirector, .infoActor {
+        width: 100vw;
+        height: auto;
+        margin: 0% 0vw;
+        background-color: rgb(19, 25, 56);
+    }
+
+    .imagenDirector, .imagenActor {
+        background-position: bottom;
+    }
+
+    .bioDirector h1, .bioActor h1 {
+        text-align: center;
     }
 
 }
