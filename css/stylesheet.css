@@ -1276,10 +1276,14 @@ ul.slider li:target {
     margin: auto;
 }
 
-.tituloPortada img{
+.tituloPortadaReproducir img{
     width: 50%;
     display: block;
     margin: 0% 0%;
+}
+
+.sinopsis{
+    display: none;
 }
 
 .videoFondo{
@@ -1330,22 +1334,25 @@ ul.slider li:target {
     width: 40%;
 }
 
-
-.descripcionPeliPortadaReproducir p{
-    color: white;
-    font-family: 'Montserrat';
-    font-size: larger;
-    text-align: justify;
+.añoGenDurReproducir{
+    width: 90%;
+    display: flex;
 }
 
-.descripcionPeliPortadaReproducir p a{
+
+.añoGenDurReproducir p{
+    font-family: 'Montserrat';
     color: white;
     text-decoration: none;
+    margin: 0% 1%;
 }
 
-.descripcionPeliPortadaReproducir p a:hover{
-    font-weight: bolder;
+.añoGenDurReproducir a{
+    font-family: 'Montserrat';
+    color: white;
+    width: 50px;
 }
+
 
 .imdbLogoReproducir{
     width: 40px;
@@ -2715,6 +2722,95 @@ hr{
         background-color: rgb(49, 62, 128);
         color: white;
         cursor: pointer;
+    }
+
+    .descripcionPeliPortadaReproducir {
+        position: absolute;
+        z-index: 5;
+        top: 15%;
+        left: 2%;
+        width: 95%;
+        height: 50%;
+    }
+
+    .añoGenDurReproducir {
+        width: 90%;
+        display: flex;
+        margin: 7% 0% 0% 0%;
+    }
+
+    .añoGenDurReproducir a{
+        text-decoration: none;
+    }
+
+    .imdbLogoReproducir {
+        width: 40px;
+        position: absolute;
+        margin: 12.5% 0% 0% 1%;
+    }
+
+    .notaPeliReproducir{
+        margin: 8% 0% 0% 5%;
+        color: white;
+        font-family: 'Montserrat';
+    }
+
+    .HeaderReproduccion{
+        background-color: rgb(19, 25, 56);
+    }
+
+    .videoFondo {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        margin: -5px 0% 0%;
+        height: calc(100% - 50px);
+    }
+
+    .FondoReproduccion::before {
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0) 0%, rgb(19, 25, 56) 90%);
+    }
+
+    .tituloPortadaReproducir{
+        width: 100%;
+        height: auto;
+        margin: 5% 0% 0%;
+    }
+
+    .descripcionPeliPortadaReproducir {
+        position: absolute;
+        z-index: 5;
+        top: 0%;
+        left: 2%;
+        width: 95%;
+        height: 50%;
+    }
+
+    .fas-fa-play {
+        width: 10%;
+        position: absolute;
+        top: 37%;
+        left: 30%;
+    }
+
+    .FondoReproduccion {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 50px);
+        margin-top: 50px;
+        top: 0px;
+    }
+
+    .castingPelicula{
+        width: 100%;
+        color: white;
+        font-family: 'Montserrat';
+    }
+
+    .castingPelicula a{
+        color: white;
+        font-family: 'Montserrat';
+        text-decoration: none;
     }
 
 }
