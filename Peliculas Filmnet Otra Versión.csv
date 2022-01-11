@@ -1,0 +1,303 @@
+;;;;;;;
+;PELÍCULAS;;;;;;
+;idPelicula;Titulo;Año;Duración;Nota IMDb;Género;Poster
+;1;Sin tiempo para morir;2021;163min;7.4;Accion;https://pics.filmaffinity.com/no_time_to_die-525355918-mmed.jpg
+;2;El francotirador;2014;132min;7.3;Accion;https://pics.filmaffinity.com/american_sniper-943269662-mmed.jpg
+;3;Venganza;2008;93min;7.8;Accion;https://pics.filmaffinity.com/taken-598020426-mmed.jpg
+;4;Reservoir Dogs;1992;99min;8.3;Accion;https://pics.filmaffinity.com/reservoir_dogs-904905830-mmed.jpg
+;5;Gladiator;2000;150min;8.5;Accion;https://pics.filmaffinity.com/gladiator-564554218-mmed.jpg
+;6;Kill Bill Volumen 1;2003;110min;8.1;Accion;https://pics.filmaffinity.com/kill_bill_volume_1_aka_kill_bill_vol_1-216872360-mmed.jpg
+;7;Men in Black ;1997;98min;7.3;Accion;https://pics.filmaffinity.com/men_in_black_mib-438261396-mmed.jpg
+;8;Ghost in the Shell 2.0;2008;83min;8.0;Accion;https://pics.filmaffinity.com/kokaku_kidotai_2_0_ghost_in_the_shell_2_0-813867896-mmed.jpg
+;9;Despierta la furia;2021;119min;7.1;Accion;https://pics.filmaffinity.com/wrath_of_man-727553252-mmed.jpg
+;10;John Wick;2014;101min;7.4;Accion;https://pics.filmaffinity.com/john_wick-166872838-mmed.jpg
+;11;Need for Speed;2014;130min;6.4;Accion;https://pics.filmaffinity.com/need_for_speed-821158567-mmed.jpg
+;12;El amanecer del planeta de los simios;2014;130min;7.6;Accion;https://pics.filmaffinity.com/dawn_of_the_planet_of_the_apes-766600891-mmed.jpg
+;13;Una noche para sobrevivir;2015;114min;6.6;Accion;https://pics.filmaffinity.com/run_all_night-707625667-mmed.jpg
+;14;Origen;2010;148min;8.8;Accion;https://pics.filmaffinity.com/inception-652954101-mmed.jpg
+;15;Yojimbo (El mercenario);1961;110min;8.2;Accion;https://pics.filmaffinity.com/yojinbo_yojimbo_the_bodyguard-964803518-mmed.jpg
+;16;Matrix;1999;131min;8.7;Accion;https://pics.filmaffinity.com/the_matrix-155050517-mmed.jpg
+;17;El profesional (Léon);1994;106min;8.5;Accion;https://pics.filmaffinity.com/leon_leon-207548886-mmed.jpg
+;18;El invitado;2012;115min;6.7;Accion;https://pics.filmaffinity.com/safe_house-299293074-mmed.jpg
+;19;Jack Ryan: Operación Sombra;2014;105min;6.2;Accion;https://pics.filmaffinity.com/jack_ryan_shadow_recruit_aka_shadow_one-456017943-mmed.jpg
+;20;Elysium;2013;109min;6.6;Accion;https://pics.filmaffinity.com/elysium-857520115-mmed.jpg
+;21;Blood Father;2016;85min;6.4;Accion;https://pics.filmaffinity.com/blood_father-735660707-mmed.jpg
+,;22;Safe;2012;94min;6.5;Accion;https://pics.filmaffinity.com/safe-665622815-mmed.jpg
+;23;Terminator 2: El juicio final;1991;135min;8.5;Accion;https://pics.filmaffinity.com/t2_terminator_2_judgment_day-825143697-mmed.jpg
+;24;Sin City (Ciudad del pecado);2005;124min;8.0;Accion;https://pics.filmaffinity.com/sin_city_frank_miller_s_sin_city-677469240-mmed.jpg
+;25;Baby Driver;2017;115min;7.6;Accion;https://pics.filmaffinity.com/baby_driver-399368582-mmed.jpg
+;26;Redención;2013;100min;6.2;Accion;https://pics.filmaffinity.com/hummingbird_aka_redemption-586607235-mmed.jpg
+;27;Operación U.N.C.L.E.;2015;116min;7.3;Accion;https://pics.filmaffinity.com/the_man_from_u_n_c_l_e-205242431-mmed.jpg
+;28;John Wick: Pacto de sangre;2017;122min;7.5;Accion;https://pics.filmaffinity.com/john_wick_chapter_two-435532369-mmed.jpg
+;29;Skyfall;2012;143min;7.8;Accion;https://pics.filmaffinity.com/skyfall-387366879-mmed.jpg
+;30;Malditos bastardos;2009;146min;8.3;Accion;https://pics.filmaffinity.com/inglourious_basterds-976286054-mmed.jpg
+;31;Rambo: Last Blood;2019;100min;6.1;Accion;https://pics.filmaffinity.com/rambo_last_blood-756933079-mmed.jpg
+;32;Mad Max: Furia en la carretera;2015;120min;8.1;Accion;https://pics.filmaffinity.com/mad_max_fury_road-429261909-mmed.jpg
+;33;Fast & Furious: Hobbs & Shaw;2019;135min;6.5;Accion;https://pics.filmaffinity.com/fast_furious_presents_hobbs_shaw-729732578-mmed.jpg
+;34;Kingsman: Servicio secreto;2014;129min;7.7;Accion;https://pics.filmaffinity.com/kingsman_the_secret_service-485444831-mmed.jpg
+;35;The Equalizer: El protector;2014;128min;7.2;Accion;https://pics.filmaffinity.com/the_equalizer-392015711-mmed.jpg
+;36;Asesinos de élite;2011;105min;6.4;Accion;https://pics.filmaffinity.com/killer_elite-639465993-mmed.jpg
+;37;Escuadrón suicida;2016;123min;5.9;Accion;https://pics.filmaffinity.com/suicide_squad-430263618-mmed.jpg
+;38;Transporter;2002;92min;6.8;Accion;https://pics.filmaffinity.com/the_transporter-475604999-mmed.jpg
+;39;Un espía y medio;2016;114min;6.3;Accion;https://pics.filmaffinity.com/central_intelligence-570952557-mmed.jpg
+;40;Tomb Raider;2018;122min;6.3;Accion;https://pics.filmaffinity.com/tomb_raider-485556121-mmed.jpg
+;41;Infiltrados;2006;149min;8.5;Accion;https://pics.filmaffinity.com/the_departed-749477966-mmed.jpg
+;42;Kill Bill. Volumen 2;2004;137min;8.0;Accion;https://pics.filmaffinity.com/kill_bill_volume_2-249713987-mmed.jpg
+;43;Los mercenarios;2010;100min;6.5;Accion;https://pics.filmaffinity.com/the_expendables-597606855-mmed.jpg
+;44;Spectre;2015;148min;6.8;Accion;https://pics.filmaffinity.com/spectre-683709494-mmed.jpg
+;45;Tenet;2019;150min;7.4;Accion;https://pics.filmaffinity.com/tenet-432994986-mmed.jpg
+;46;La fortaleza escondida;1958;139min;8.1;Accion;https://pics.filmaffinity.com/kakushi_toride_no_san_akunin_the_hidden_fortress-752949972-mmed.jpg
+;47;Dunkerque;2017;107min;7.8;Accion;https://pics.filmaffinity.com/dunkirk-461720087-mmed.jpg
+;48;El señor de los anillos: El retorno del rey;2003;201min;8.8;Accion;https://pics.filmaffinity.com/the_lord_of_the_rings_the_return_of_the_king-178294596-mmed.jpg
+;49;Logan;2017;135min;8.1;Accion;https://pics.filmaffinity.com/logan-528968427-mmed.jpg
+;50;In Time;2011;109min;6.7;Accion;https://pics.filmaffinity.com/in_time-139117348-mmed.jpg
+;51;El padrino;1972;175min;9.2;Drama;https://pics.filmaffinity.com/the_godfather-488102675-mmed.jpg
+;52;El último duelo;2021;152min;7.5;Drama;https://pics.filmaffinity.com/the_last_duel-563139924-mmed.jpg
+;53;El renacido;2015;156min;8.0;Drama;https://pics.filmaffinity.com/the_revenant-498846647-mmed.jpg
+;54;Malcolm X;1992;193min;7.7;Drama;https://pics.filmaffinity.com/malcolm_x-849798777-mmed.jpg
+;55;The Fighter;2010;115min;7.8;Drama;https://pics.filmaffinity.com/the_fighter-295947851-mmed.jpg
+;56;Infiltrado;2016;127min;7.0;Drama;https://pics.filmaffinity.com/the_infiltrator-296206595-mmed.jpg
+;57;El pianista;2002;148min;8.5;Drama;https://pics.filmaffinity.com/the_pianist_le_pianiste-978132965-mmed.jpg
+;58;El precio del poder;1983;163min;8.3;Drama;https://pics.filmaffinity.com/scarface-798722679-mmed.jpg
+;59;Érase una vez en... Hollywood;2019;165min;7.6;Drama;https://pics.filmaffinity.com/once_upon_a_time_in_hollywood-987163522-mmed.jpg
+;60;El lado bueno de las cosas;2012;120min;7.7;Drama;https://pics.filmaffinity.com/silver_linings_playbook-651038776-mmed.jpg
+;61;8 millas;2002;112min;7.1;Drama;https://pics.filmaffinity.com/8_mile-229373133-mmed.jpg
+;62;Gran torino;2008;119min;8.1;Drama;https://pics.filmaffinity.com/gran_torino-278262332-mmed.jpg
+;63;Nomadland;2020;108min;7.4;Drama;https://pics.filmaffinity.com/nomadland-118487105-mmed.jpg
+;64;Le Mans '66;2019;152min;8.1;Drama;https://pics.filmaffinity.com/ford_v_ferrari-929107889-mmed.jpg
+;65;Joker;2019;122min;8.4;Drama;https://pics.filmaffinity.com/joker-790658206-mmed.jpg
+;66;Creed. La leyenda de Rocky;2015;132min;7.6;Drama;https://pics.filmaffinity.com/creed-232228847-mmed.jpg
+;67;Moneyball: Rompiendo las reglas;2011;133min;7.6;Drama;https://pics.filmaffinity.com/moneyball-572287299-mmed.jpg
+;68;Uno de los nuestros;1990;148min;8.7;Drama;https://pics.filmaffinity.com/goodfellas-722948658-mmed.jpg
+;69;El vuelo;2012;138min;7.3;Drama;https://pics.filmaffinity.com/flight-730948196-mmed.jpg
+;70;Dallas Buyers Club;2013;117min;8.0;Drama;https://pics.filmaffinity.com/dallas_buyers_club-828242648-mmed.jpg
+;71;Shutter Island;2010;138min;8.2;Drama;https://pics.filmaffinity.com/shutter_island-215721197-mmed.jpg
+;72;Drive;2011;100min;7.8;Drama;https://pics.filmaffinity.com/drive-467825966-mmed.jpg
+;73;Cadena perpetua;1994;142min;9.3;Drama;https://pics.filmaffinity.com/the_shawshank_redemption-576140557-mmed.jpg
+;74;Mula;2018;116min;7.0;Drama;https://pics.filmaffinity.com/the_mule-724894082-mmed.jpg
+;75;La gran apuesta;2015;123min;7.8;Drama;https://pics.filmaffinity.com/the_big_short-129125490-mmed.jpg
+;76;Pulp fiction;1994;153min;8.9;Drama;https://pics.filmaffinity.com/pulp_fiction-210382116-mmed.jpg
+;77;El vicio del poder;2018;132min;7.2;Drama;https://pics.filmaffinity.com/vice-361559090-mmed.jpg
+;78;El padre;2020;97min;8.3;Drama;https://pics.filmaffinity.com/the_father-901439398-mmed.jpg
+;79;Toro salvaje;1980;124min;8.2;Drama;https://pics.filmaffinity.com/raging_bull-820857019-mmed.jpg
+;80;La lista de Schindler;1993;195min;8.9;Drama;https://pics.filmaffinity.com/schindler_s_list-473662617-mmed.jpg
+;81;Loving Pablo;2017;123min;6.3;Drama;https://pics.filmaffinity.com/loving_pablo-528402943-mmed.jpg
+;82;Green Book;2018;130min;8.2;Drama;https://pics.filmaffinity.com/green_book-786419795-mmed.jpg
+;83;Capitán Phillips;2013;135min;7.8;Drama;https://pics.filmaffinity.com/captain_phillips-273270973-mmed.jpg
+;84;No es país para viejos;2007;122min;8.1;Drama;https://pics.filmaffinity.com/no_country_for_old_men-150566696-mmed.jpg
+;85;Moonlight;2016;111min;7.4;Drama;https://pics.filmaffinity.com/moonlight-232276883-mmed.jpg
+;86;Straight Outta Compton;2015;147min;7.8;Drama;https://pics.filmaffinity.com/straight_outta_compton-226610560-mmed.jpg
+;87;Parásitos;2019;132min;8.6;Drama;https://pics.filmaffinity.com/gisaengchung-610652607-mmed.jpg
+;88;La red social;2010;120min;7.7;Drama;https://pics.filmaffinity.com/the_social_network-421032493-mmed.jpg
+;89;Dioses y monstruos;1998;105min;7.4;Drama;https://pics.filmaffinity.com/gods_and_monsters-768789260-mmed.jpg
+;90;Animales nocturnos;2016;115min;7.5;Drama;https://pics.filmaffinity.com/nocturnal_animals-883173584-mmed.jpg
+;91;El americano;2010;105min;6.3;Drama;https://pics.filmaffinity.com/the_american-216158246-mmed.jpg
+;92;12 años de esclavitud;2013;133min;8.1;Drama;https://pics.filmaffinity.com/12_years_a_slave_twelve_years_a_slave-305655779-mmed.jpg
+;93;El curioso caso de Benjamin Button;2008;167min;7.8;Drama;https://pics.filmaffinity.com/the_curious_case_of_benjamin_button-553974725-mmed.jpg
+;94;Belleza oculta;2016;94min;6.8;Drama;https://pics.filmaffinity.com/collateral_beauty-331373149-mmed.jpg
+;95;El último emperador;1987;156min;7.7;Drama;https://pics.filmaffinity.com/the_last_emperor-467204798-mmed.jpg
+;96;Nightcrawler;2014;113min;7.8;Drama;https://pics.filmaffinity.com/nightcrawler-317347366-mmed.jpg
+;97;Ha nacido una estrella;2018;135min;7.6;Drama;https://pics.filmaffinity.com/a_star_is_born-447479418-mmed.jpg
+;98;Boyhood (Momentos de una vida);2014;159min;7.9;Drama;https://pics.filmaffinity.com/boyhood-954973569-mmed.jpg
+;99;Manchester frente al mar;2016;135min;7.8;Drama;https://pics.filmaffinity.com/manchester_by_the_sea-889918647-mmed.jpg
+;100;La dama de hierro;2011;105min;6.4;Drama;https://pics.filmaffinity.com/the_iron_lady-610734875-mmed.jpg
+;101;Zoolander: Un descerebrado de moda;2001;89;6.5;Comedia;https://pics.filmaffinity.com/zoolander-604094084-mmed.jpg
+;102;My Sassy Girl;2001;135min;8.0;Comedia;https://pics.filmaffinity.com/yeopgijeogin_geunyeo_my_sassy_girl-379672172-mmed.jpg
+;103;Borat ;2006;84min;7.3;Comedia;https://pics.filmaffinity.com/borat_cultural_learnings_of_america_for_make_benefit_glorious_nation_of_kazakhstan-512396849-mmed.jpg
+;104;Dos buenos tipos;2016;116min;7.4;Comedia;https://pics.filmaffinity.com/the_nice_guys-516760362-mmed.jpg
+;105;Algo pasa con Mary;1998;119min;7.1;Comedia;https://pics.filmaffinity.com/there_s_something_about_mary-465333352-mmed.jpg
+;106;Resacón en Las Vegas;2009;100min;7.7;Comedia;https://pics.filmaffinity.com/the_hangover-726045836-mmed.jpg
+;107;La entrevista;2014;112min;6.5;Comedia;https://pics.filmaffinity.com/the_interview-278650317-mmed.jpg
+;108;Cómo acabar con tu jefe;2011;100min;6.8;Comedia;https://pics.filmaffinity.com/horrible_bosses-786462875-mmed.jpg
+;109;Ted;2012;106min;6.9;Comedia;https://pics.filmaffinity.com/ted-632757357-mmed.jpg
+;110;El clan de los rompehuesos;2005;113min;6.4;Comedia;https://pics.filmaffinity.com/the_longest_yard-148424084-mmed.jpg
+;111;Salidos de cuentas;2010;100min;6.5;Comedia;https://pics.filmaffinity.com/due_date-332515431-mmed.jpg
+;112;Paul;2011;103min;7.0;Comedia;https://pics.filmaffinity.com/paul-801784289-mmed.jpg
+;113;Entourage (El séquito);2015;104min;6.6;Comedia;https://pics.filmaffinity.com/entourage-910281680-mmed.jpg
+;114;Y de repente tú;2015;125min;6.2;Comedia;https://pics.filmaffinity.com/trainwreck-190246355-mmed.jpg
+;115;Puñales por la espalda;2019;130min;7.9;Comedia;https://pics.filmaffinity.com/knives_out-326770674-mmed.jpg
+;116;Starsky & Hutch;2004;101min;6.1;Comedia;https://pics.filmaffinity.com/starsky_hutch_aka_starsky_and_hutch_the_movie-129326556-mmed.jpg
+;117;La máscara;1994;101;6.9;Comedia;https://pics.filmaffinity.com/the_mask-746858956-mmed.jpg
+;118;Click;2006;107min;6.4;Comedia;https://pics.filmaffinity.com/click-924581501-mmed.jpg
+;119;El becario;2015;121min;7.1;Comedia;https://pics.filmaffinity.com/the_intern-267828724-mmed.jpg
+;120;El dictador;2012;83min;6.4;Comedia;https://pics.filmaffinity.com/the_dictator-138905408-mmed.jpg
+;121;Yucatán;2018;130min;5.6;Comedia;https://pics.filmaffinity.com/yucatan-564640894-mmed.jpg
+;122;El diario de Bridget Jones;2001;100min;6.7;Comedia;https://pics.filmaffinity.com/bridget_jones_s_diary-320975640-mmed.jpg
+;123;Se nos fue de las manos;2014;85min;6.8;Comedia;https://pics.filmaffinity.com/babysitting-661690405-mmed.jpg
+;124;Cómo acabar sin tu jefe 2;2014;105min;6.3;Comedia;https://pics.filmaffinity.com/horrible_bosses_2-408816038-mmed.jpg
+;125;Arma fatal;2007;121min;7.8;Comedia;https://pics.filmaffinity.com/hot_fuzz-381252727-mmed.jpg
+;126;Johnny English;2003;88min;6.2;Comedia;https://pics.filmaffinity.com/johnny_english-466735129-mmed.jpg
+;127;Ocho apellidos vascos;2014;98min;6.5;Comedia;https://pics.filmaffinity.com/ocho_apellidos_vascos-836127633-mmed.jpg
+;128;Snatch. Cerdos y diamantes;2000;104min;8.2;Comedia;https://pics.filmaffinity.com/snatch-921179475-mmed.jpg
+;129;El gran Lebowski;1998;117min;8.1;Comedia;https://pics.filmaffinity.com/the_big_lebowski-877217211-mmed.jpg
+;130;Solo en casa;1990;100min;7.6;Comedia;https://pics.filmaffinity.com/home_alone-163260879-mmed.jpg
+;131;Niños grandes;2010;97min;6.0;Comedia;https://pics.filmaffinity.com/grown_ups-567297059-mmed.jpg
+;132;Ted 2;2015;115min;6.3;Comedia;https://pics.filmaffinity.com/ted_2-177396934-mmed.jpg
+;133;Supermaderos;2002;99min;7.1;Comedia;https://pics.filmaffinity.com/super_troopers-635619773-mmed.jpg
+;134;Proyecto X;2012;88min;6.6;Comedia;https://pics.filmaffinity.com/project_x-191267760-mmed.jpg
+;135;Malditos vecinos;2014;96min;6.3;Comedia;https://pics.filmaffinity.com/neighbors-933128749-mmed.jpg
+;136;El gran Stan: El matón de la prisión;2007;105min;6.2;Comedia;https://pics.filmaffinity.com/big_stan-945915466-mmed.jpg
+;137;Norbit;2007;102min;4.1;Comedia;https://pics.filmaffinity.com/norbit-332878711-mmed.jpg
+;138;Infiltrados en la universidad;2014;120min;7.0;Comedia;https://pics.filmaffinity.com/22_jump_street-643395530-mmed.jpg
+;139;Pixels;2015;105min;5.5;Comedia;https://pics.filmaffinity.com/pixels-369347945-mmed.jpg
+;140;El mundo es nuestro;2012;87min;6.6;Comedia;https://pics.filmaffinity.com/el_mundo_es_nuestro-968175243-mmed.jpg
+;141;De-mentes criminales;2016;94min;5.8;Comedia;https://pics.filmaffinity.com/masterminds_aka_loomis_fargo-181851356-mmed.jpg
+;142;Superagente 86 de película;2008;110min;6.5;Comedia;https://pics.filmaffinity.com/get_smart-679279556-mmed.jpg
+;143;Resacón 2: ¡Ahora en Tailandia!;2011;102min;6.5;Comedia;https://pics.filmaffinity.com/the_hangover_part_ii-126131083-mmed.jpg
+;144;Amélie;2001;120min;8.3;Comedia;https://pics.filmaffinity.com/le_fabuleux_destin_d_amelie_poulain-848337470-mmed.jpg
+;145;Dos tontos muy tontos;1994;106min;7.3;Comedia;https://pics.filmaffinity.com/dumb_and_dumber_dumb_dumber-138209855-mmed.jpg
+;146;Colega, ¿dónde está mi coche?;2000;95min;5.5;Comedia;https://pics.filmaffinity.com/dude_where_s_my_car-919078711-mmed.jpg
+;147;Scary Movie;2000;88miin;6.2;Comedia;https://pics.filmaffinity.com/scary_movie-943532513-mmed.jpg
+;148;Súper empollonas;2019;102min;7.2;Comedia;https://pics.filmaffinity.com/booksmart-275958553-mmed.jpg
+;149;Vaya patrulla;2014;100min;6.2;Comedia;https://pics.filmaffinity.com/ride_along-858561255-mmed.jpg
+;150;La peor semana;2018;116min;5.2;Comedia;https://pics.filmaffinity.com/the_week_of-768501698-mmed.jpg
+;151;Regreso al futuro;1985;116min;8.5;Sci-Fi;https://pics.filmaffinity.com/back_to_the_future-100822308-mmed.jpg
+;152;Alien, el octavo pasajero;1979;116min;8.4;Sci-Fi;https://pics.filmaffinity.com/alien-657278575-mmed.jpg
+;153;Interstellar;2014;169min;8.6;Sci-Fi;https://pics.filmaffinity.com/interstellar-366875261-mmed.jpg
+;154;El quinto elemento;1997;127min;7.7;Sci-Fi;https://pics.filmaffinity.com/the_fifth_element_le_cinquieme_element-198425470-mmed.jpg
+;155;Yo, robot;2004;115min;7.1;Sci-Fi;https://pics.filmaffinity.com/i_robot-964272233-mmed.jpg
+;156;Distrito 9;2009;111min;7.9;Sci-Fi;https://pics.filmaffinity.com/district_9-116196176-mmed.jpg
+;157;Ad Astra;2019;122min;6.5;Sci-Fi;https://pics.filmaffinity.com/ad_astra-649245505-mmed.jpg
+;158;La llegada;2016;116min;7.9;Sci-Fi;https://pics.filmaffinity.com/arrival-150207636-mmed.jpg
+;159;Passengers;2016;116min;7.0;Sci-Fi;https://pics.filmaffinity.com/passengers-367242067-mmed.jpg
+;160;2001: una odisea del espacio;1968;139min;8.3;Sci-Fi;https://pics.filmaffinity.com/2001_a_space_odyssey-322989452-mmed.jpg
+;161;Underwater;2020;95min;5.9;Sci-Fi;https://pics.filmaffinity.com/underwater-618836804-mmed.jpg
+;162;Solaris;2002;94min;6.2;Sci-Fi;https://pics.filmaffinity.com/solaris-916190762-mmed.jpg
+;163;La guerra de los mundos;2005;116min;6.5;Sci-Fi;https://pics.filmaffinity.com/war_of_the_worlds-353489914-mmed.jpg
+;164;Misión a Marte;2000;114min;5.7;Sci-Fi;https://pics.filmaffinity.com/mission_to_mars-432458830-mmed.jpg
+;165;Gravity;2013;90min;7.7;Sci-Fi;https://pics.filmaffinity.com/gravity-595126003-mmed.jpg
+;166;Predators;2010;107min;6.4;Sci-Fi;https://pics.filmaffinity.com/predators-452333459-mmed.jpg
+;167;Super 8;2011;107min;7.0;Sci-Fi;https://pics.filmaffinity.com/super_8-421797032-mmed.jpg
+;168;Star Trek;2009;126min;7.9;Sci-Fi;https://pics.filmaffinity.com/star_trek_star_trek_xi-815589716-mmed.jpg
+;169;Bumblebee;2018;114min;6.7;Sci-Fi;https://pics.filmaffinity.com/bumblebee-553881395-mmed.jpg
+;170;Blade Runner 2049;2017;164min;8.0;Sci-Fi;https://pics.filmaffinity.com/blade_runner_2049-681477614-mmed.jpg
+;171;Robocop;1987;103min;7.6;Sci-Fi;https://pics.filmaffinity.com/robocop-178512372-large.jpg
+;172;Oblivion;2013;126min;7.0;Sci-Fi;https://pics.filmaffinity.com/oblivion-930354183-mmed.jpg
+;173;Alita: Ángel de combate;2019;121min;7.3;Sci-Fi;https://pics.filmaffinity.com/alita_battle_angel-715028190-mmed.jpg
+;174;Monstruoso;2008;84min;7.0;Sci-Fi;https://pics.filmaffinity.com/cloverfield-188084506-mmed.jpg
+;175;Marte (The Martian);2015;142min;8.0;Sci-Fi;https://pics.filmaffinity.com/the_martian-972637166-mmed.jpg
+;176;Finch;2021;115min;6.9;Sci-Fi;https://pics.filmaffinity.com/finch-700854548-mmed.jpg
+;177;Valerian y la ciudad de los mil planetas;2017;137min;6.5;Sci-Fi;https://pics.filmaffinity.com/valerian_and_the_city_of_a_thousand_planets-459268698-mmed.jpg
+;178;After Earth;2013;100min;4.8;Sci-Fi;https://pics.filmaffinity.com/after_earth-859495433-mmed.jpg
+;179;La Torre Oscura;2017;95min;5.6;Sci-Fi;https://pics.filmaffinity.com/the_dark_tower-790489565-mmed.jpg
+;180;Eternal;2015;116min;6.5;Sci-Fi;https://pics.filmaffinity.com/self_less_aka_selfless-498548304-mmed.jpg
+;181;TRON: Legacy;2010;125min;6.8;Sci-Fi;https://pics.filmaffinity.com/tron_legacy-495421688-mmed.jpg
+;182;Tau;2018;97min;5.8;Sci-Fi;https://pics.filmaffinity.com/tau-236207705-mmed.jpg
+;183;Mudo;2018;126min;5.5;Sci-Fi;https://pics.filmaffinity.com/mute-986749956-mmed.jpg
+;184;Blade Runner;1982;117min;8.1;Sci-Fi;https://pics.filmaffinity.com/blade_runner-351607743-mmed.jpg
+;185;Ex Machina;2015;108min;7.7;Sci-Fi;https://pics.filmaffinity.com/ex_machina-368494509-mmed.jpg
+;186;Infinite;2021;106min;5.5;Sci-Fi;https://pics.filmaffinity.com/infinite-926019748-mmed.jpg
+;187;Juez Dredd;1995;95min;5.6;Sci-Fi;https://pics.filmaffinity.com/judge_dredd-447589318-mmed.jpg
+;188;Los sustitutos;2009;88min;6.3;Sci-Fi;https://pics.filmaffinity.com/surrogates-502617815-mmed.jpg
+;189;High Life;2018;110min;5.8;Sci-Fi;https://pics.filmaffinity.com/high_life-377871831-mmed.jpg
+;190;El hijo;2019;90min;6.1;Sci-Fi;https://pics.filmaffinity.com/brightburn-170933836-mmed.jpg
+;191;El juego de Ender;2013;114min;6.6;Sci-Fi;https://pics.filmaffinity.com/ender_s_game-635930351-mmed.jpg
+;192;La hora más oscura;2011;89min;4.9;Sci-Fi;https://pics.filmaffinity.com/the_darkest_hour-842869670-mmed.jpg
+;193;Autómata;2014;110min;6.1;Sci-Fi;https://pics.filmaffinity.com/automata-750464639-mmed.jpg
+;194;A.I. Inteligencia Artificial;2001;146min;7.2;Sci-Fi;https://pics.filmaffinity.com/a_i_artificial_intelligence-535598622-mmed.jpg
+;195;La cosa (El enigma de otro mundo);1982;105min;8.1;Sci-Fi;https://pics.filmaffinity.com/the_thing-823700381-mmed.jpg
+;196;Réplicas;2018;107min;5.5;Sci-Fi;https://pics.filmaffinity.com/replicas-243443952-mmed.jpg
+;197;Ready Player One;2018;140min;7.4;Sci-Fi;https://pics.filmaffinity.com/ready_player_one-508487059-mmed.jpg
+;198;Life (Vida);2017;103min;6.6;Sci-Fi;https://pics.filmaffinity.com/life-707248688-mmed.jpg
+;199;El atlas de las nubes;2012;172min;7.4;Sci-Fi;https://pics.filmaffinity.com/cloud_atlas-447437455-mmed.jpg
+;200;Al filo del mañana;2014;113min;7.9;Sci-Fi;https://pics.filmaffinity.com/edge_of_tomorrow-632023834-mmed.jpg
+;201;Titanic;1997;195min;7.8;Romántica;https://pics.filmaffinity.com/titanic-321994924-mmed.jpg
+;202;Slumdog Millionaire;2008;123min;8.0;Romántica;https://pics.filmaffinity.com/slumdog_millionaire-345553310-mmed.jpg
+;203;Pretty Woman;1990;119min;7.1;Romántica;https://pics.filmaffinity.com/pretty_woman-629528349-mmed.jpg
+;204;Serena;2014;109min;5.4;Romántica;https://pics.filmaffinity.com/serena-781927012-mmed.jpg
+;205;Déjate querer;2014;94min;6.0;Romántica;https://pics.filmaffinity.com/playing_it_cool-912506130-mmed.jpg
+;206;La ciudad de las estrellas (La La Land);2016;127min;8.0;Romántica;https://pics.filmaffinity.com/la_la_land-262021831-mmed.jpg
+;207;Cuando te encuentre;2012;101min;6.5;Romántica;https://pics.filmaffinity.com/the_lucky_one-105071119-mmed.jpg
+;208;Her;2013;126min;8.0;Romántica;https://pics.filmaffinity.com/her-716403893-mmed.jpg
+;209;Dirty Dancing;1987;97min;7.0;Romántica;https://pics.filmaffinity.com/dirty_dancing-466465576-mmed.jpg
+;210;Un lugar donde refugiarse;2013;115min;6.7;Romántica;https://pics.filmaffinity.com/safe_haven-865542196-mmed.jpg
+;211;Remember Me (Recuérdame);2019;88min;7.1;Romántica;https://pics.filmaffinity.com/remember_me-912047120-mmed.jpg
+;212;Cincuenta sombras de Grey;2015;124min;4.1;Romántica;https://pics.filmaffinity.com/fifty_shades_of_grey-307638661-mmed.jpg
+;213;La última canción;2010;107min;6.0;Romántica;https://pics.filmaffinity.com/the_last_song-620416793-mmed.jpg
+;214;Una cuestión de tiempo;2013;123min;7.8;Romántica;https://pics.filmaffinity.com/about_time-988331421-mmed.jpg
+;215;West Side Story;2021;156min;7.9;Romántica;https://pics.filmaffinity.com/west_side_story-621764532-mmed.jpg
+;216;Love Actually;2003;128min;7.6;Romántica;https://pics.filmaffinity.com/love_actually-840408587-mmed.jpg
+;217;Crazy Stupid Love;2011;118min;7.4;Romántica;https://pics.filmaffinity.com/crazy_stupid_love-813652973-mmed.jpg
+;218;Una canción irlandesa;2020;102min;5.7;Romántica;https://pics.filmaffinity.com/wild_mountain_thyme-282405666-mmed.jpg
+;219;Memorias de África;1985;160min;7.2;Romántica;https://pics.filmaffinity.com/out_of_africa-215774823-mmed.jpg
+;220;Cuando menos te lo esperas;2003;129min;6.7;Romántica;https://pics.filmaffinity.com/something_s_gotta_give-495250693-mmed.jpg
+;221;Orgullo y prejuicio;2005;127min;7.8;Romántica;https://pics.filmaffinity.com/pride_and_prejudice-629327318-mmed.jpg
+;222;El paciente inglés;1996;162min;7.4;Romántica;https://pics.filmaffinity.com/the_english_patient-572633305-mmed.jpg
+;223;Begin Again;2013;104min;7.4;Romántica;https://pics.filmaffinity.com/begin_again-274155842-mmed.jpg
+;224;El secreto de Adaline;2015;112min;7.2;Romántica;https://pics.filmaffinity.com/the_age_of_adaline-258365000-mmed.jpg
+;225;La casa del lago;2006;105min;6.8;Romántica;https://pics.filmaffinity.com/the_lake_house-480956032-mmed.jpg
+;226;Brokeback Mountain (En terreno vedado);2005;134min;7.7;Romántica;https://pics.filmaffinity.com/brokeback_mountain-409244136-mmed.jpg
+;227;La cruda realidad;2009;97min;6.4;Romántica;https://pics.filmaffinity.com/the_ugly_truth-710849504-mmed.jpg
+;228;En la playa de Chesil;2017;105min;6.3;Romántica;https://pics.filmaffinity.com/on_chesil_beach-387604901-mmed.jpg
+;229;The Holiday (Vacaciones);2006;138min;6.9;Romántica;https://pics.filmaffinity.com/the_holiday-177175899-mmed.jpg
+;230;After. Aquí empieza todo;2019;105min;5.3;Romántica;https://pics.filmaffinity.com/after-117306772-mmed.jpg
+;231;¿No es romántico?;2019;88min;5.9;Romántica;https://pics.filmaffinity.com/isn_t_it_romantic-859831468-mmed.jpg
+;232;Cada día;2018;95min;6.5;Romántica;https://pics.filmaffinity.com/every_day-314614876-mmed.jpg
+;233;One Day (Siempre el mismo día);2011;108min;7.0;Romántica;https://pics.filmaffinity.com/one_day-871097561-mmed.jpg
+;234;Una habitación con vistas;1985;117min;7.3;Romántica;https://pics.filmaffinity.com/a_room_with_a_view-377068271-mmed.jpg
+;235;Last Christmas;2019;102min;6.5;Romántica;https://pics.filmaffinity.com/last_christmas-585055548-mmed.jpg
+;236;Ha nacido una estrella;2018;135min;7.6;Romántica;https://pics.filmaffinity.com/a_star_is_born-447479418-mmed.jpg
+;237;Los puentes de Madison;1995;135min;7.6;Romántica;https://pics.filmaffinity.com/the_bridges_of_madison_county-998728421-mmed.jpg
+;238;Casablanca;1942;102min;8.5;Romántica;https://pics.filmaffinity.com/casablanca-612211000-mmed.jpg
+;239;Más allá del tiempo;2009;107min;7.1;Romántica;https://pics.filmaffinity.com/the_time_traveler_s_wife-260366022-mmed.jpg
+;240;Amor a medianoche;2017;91min;6.6;Romántica;https://pics.filmaffinity.com/midnight_sun-647251039-mmed.jpg
+;241;Antes de ti;2016;110min;7.4;Romántica;https://pics.filmaffinity.com/me_before_you-594538815-mmed.jpg
+;242;Tengo ganas de ti;2012;124min;6.9;Romántica;https://pics.filmaffinity.com/tengo_ganas_de_ti_3msc_2-912931811-mmed.jpg
+;243;Hasta que te encontré;2018;104min;6.7;Romántica;https://pics.filmaffinity.com/forever_my_girl-326855691-mmed.jpg
+;244;A dos metros de ti;2019;116min;7.2;Romántica;https://pics.filmaffinity.com/five_feet_apart-293759292-mmed.jpg
+;245;La fábrica de sueños;2019;125min;6.6;Romántica;https://pics.filmaffinity.com/traumfabrik-191317621-mmed.jpg
+;246;El príncipe de las mareas;1991;129min;6.8;Romántica;https://pics.filmaffinity.com/the_prince_of_tides-579669069-mmed.jpg
+;247;Llévame a la luna;2012;105min;6.3;Romántica;https://pics.filmaffinity.com/un_plan_parfait-387894539-mmed.jpg
+;248;La saga Crepúsculo: Luna nueva;2009;130min;5.5;Romántica;https://pics.filmaffinity.com/the_twilight_saga_new_moon_twilight_2-890518239-mmed.jpg
+;249;Amor y otras drogas;2010;113min;6.7;Romántica;https://pics.filmaffinity.com/love_and_other_drugs-886095999-mmed.jpg
+;250;El diario de Noa;2004;124min;7.8;Romántica;https://pics.filmaffinity.com/the_notebook-565006977-mmed.jpg
+;251;Dragon Ball Super: Broly;2018;100min;7.8;Animada;https://pics.filmaffinity.com/doragon_boru_cho_burori-949664812-mmed.jpg
+;252;Spider-Man: Un nuevo universo;2018;117min;8.4;Animada;https://pics.filmaffinity.com/spider_man_into_the_spider_verse-917347027-mmed.jpg
+;253;Big Hero 6;2014;108min;7.8;Animada;https://pics.filmaffinity.com/big_hero_6-799861615-mmed.jpg
+;254;Coco;2017;109min;8.4;Animada;https://pics.filmaffinity.com/coco-155051069-mmed.jpg
+;255;Klaus;2019;97min;8.2;Animada;https://pics.filmaffinity.com/klaus-456555401-mmed.jpg
+;256;Pesadilla antes de Navidad;1993;75min;8.0;Animada;https://pics.filmaffinity.com/the_nightmare_before_christmas-136057718-mmed.jpg
+;257;El rey león;1994;85min;8.5;Animada;https://pics.filmaffinity.com/the_lion_king-983881776-mmed.jpg
+;258;Onward;2020;102min;7.4;Animada;https://pics.filmaffinity.com/onward-464150296-mmed.jpg
+;259;Zootrópolis;2016;108min;8.0;Animada;https://pics.filmaffinity.com/zootopia-155827662-mmed.jpg
+;260;Cars;2006;116min;7.1;Animada;https://pics.filmaffinity.com/cars-746710621-mmed.jpg
+;261;Kubo y las dos cuerdas mágicas;2016;101min;7.8;Animada;https://pics.filmaffinity.com/kubo_and_the_two_strings-146854951-mmed.jpg
+;262;Up;2009;96min;8.2;Animada;https://pics.filmaffinity.com/up-672315222-mmed.jpg
+;263;Your Name;2016;106min;8.4;Animada;https://pics.filmaffinity.com/kimi_no_na_wa_your_name-612760352-mmed.jpg
+;264;Rango;2011;111min;7.2;Animada;https://pics.filmaffinity.com/rango-570593002-mmed.jpg
+;265;El viaje de Chihiro;2001;124min;8.6;Animada;https://pics.filmaffinity.com/sen_to_chihiro_no_kamikakushi-348587850-mmed.jpg
+;266;Vaiana;2016;113min;7.6;Animada;https://pics.filmaffinity.com/moana-802273424-mmed.jpg
+;267;La edad de hielo (Ice Age);2002;75min;7.5;Animada;https://pics.filmaffinity.com/ice_age-893441955-mmed.jpg
+;268;La princesa Mononoke;1997;133min;8.4;Animada;https://pics.filmaffinity.com/mononoke_hime_aka_princess_mononoke_aka-598406013-mmed.jpg
+;269;El bebé jefazo;2017;97min;6.3;Animada;https://pics.filmaffinity.com/the_boss_baby-993580095-mmed.jpg
+;270;Kung Fu Panda;2008;95min;7.6;Animada;https://pics.filmaffinity.com/kung_fu_panda-200447264-mmed.jpg
+;271;Ratatouille;2007;110min;8.0;Animada;https://pics.filmaffinity.com/ratatouille-828434562-mmed.jpg
+;272;Trolls;2016;92min;6.5;Animada;https://pics.filmaffinity.com/trolls-351313154-mmed.jpg
+;273;Toy Story;1995;80min;8.3;Animada;https://pics.filmaffinity.com/toy_story-626273371-mmed.jpg
+;274;Gru, mi villano favorito;2010;92min;7.6;Animada;https://pics.filmaffinity.com/despicable_me-886797392-mmed.jpg
+;275;Buscando a Dory;2016;103min;7.3;Animada;https://pics.filmaffinity.com/finding_dory-418749314-mmed.jpg
+;276;Madagascar;2005;80min;6.9;Animada;https://pics.filmaffinity.com/madagascar-361011039-mmed.jpg
+;277;My Hero Academia: Misión mundial de héroes;2021;104min;7.5;Animada;https://pics.filmaffinity.com/boku_no_hero_academia_the_movie_world_heroes_mission-149105629-mmed.jpg
+;278;Soul;2020;100min;8.1;Animada;https://pics.filmaffinity.com/soul-557797463-mmed.jpg
+;279;Frozen. El reino del hielo;2013;98min;7.4;Animada;https://pics.filmaffinity.com/frozen-680009505-mmed.jpg
+;280;Aladdin;1992;87min;8.0;Animada;https://pics.filmaffinity.com/aladdin-819103562-mmed.jpg
+;281;101 dálmatas;1961;79min;7.3;Animada;https://pics.filmaffinity.com/one_hundred_and_one_dalmatians_101_dalmatians-288841661-mmed.jpg
+;282;Luca;2021;95min;7.5;Animada;https://pics.filmaffinity.com/luca-907827591-mmed.jpg
+;283;Shrek;2001;87min;7.9;Animada;https://pics.filmaffinity.com/shrek-903764423-mmed.jpg
+;284;Ralph rompe Internet;2018;112min;7.0;Animada;https://pics.filmaffinity.com/ralph_breaks_the_internet-862794954-mmed.jpg
+;285;Bichos, una aventura en miniatura;1998;95min;7.2;Animada;https://pics.filmaffinity.com/a_bug_s_life-189004940-mmed.jpg
+;286;Los increíbles;2004;115min;8.0;Animada;https://pics.filmaffinity.com/the_incredibles-939387273-mmed.jpg
+;287;Toy Story 2;1999;88min;7.9;Animada;https://pics.filmaffinity.com/toy_story_2-506817944-mmed.jpg
+;288;Monstruos, S.A.;2001;88min;8.1;Animada;https://pics.filmaffinity.com/monsters_inc-336355219-mmed.jpg
+;289;Del revés (Inside Out);2015;94min;8.1;Animada;https://pics.filmaffinity.com/inside_out-161470323-mmed.jpg
+;290;La LEGO película;2014;100min;7.7;Animada;https://pics.filmaffinity.com/the_lego_movie-819614387-mmed.jpg
+;291;Mi vecino Totoro;1988;86min;8.2;Animada;https://pics.filmaffinity.com/tonari_no_totoro-974352061-mmed.jpg
+;292;Cómo entrenar a tu dragón;2010;98min;8.1;Animada;https://pics.filmaffinity.com/how_to_train_your_dragon-577181358-mmed.jpg
+;293;Tarzán;1999;84min;7.3;Animada;https://pics.filmaffinity.com/tarzan-404302704-mmed.jpg
+;294;Akira;1988;124min;8.0;Animada;https://pics.filmaffinity.com/akira-557684565-mmed.jpg
+;295;Persépolis;2007;95min;8.0;Animada;https://pics.filmaffinity.com/persepolis-701715841-mmed.jpg
+;296;Megamind;2010;96min;7.3;Animada;https://pics.filmaffinity.com/megamind-871453660-mmed.jpg
+;297;Ferdinand;2017;106min;6.8;Animada;https://pics.filmaffinity.com/ferdinand-787101543-mmed.jpg
+;298;Epic. El mundo secreto;2013;102min;6.7;Animada;https://pics.filmaffinity.com/epic-587748115-mmed.jpg
+;299;La bella y la bestia;1991;85min;8.0;Animada;https://pics.filmaffinity.com/beauty_and_the_beast-152980110-mmed.jpg
+;300;WALL•E;2008;103min;8.4;Animada;https://pics.filmaffinity.com/walloe-973488527-mmed.jpg
