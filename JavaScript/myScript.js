@@ -4,7 +4,6 @@ $(document).ready(function(){
         if($("#listaHeader").css("display").toLowerCase()=="none"){
             $("#listaHeader").show("slide", {direction: "up"}, "250");
             $(".desplegableHeader input").attr("src", "css/times-solid.svg");
-            $(".descripcionPeliPortadaReproducir").hide();
             event.preventDefault();
         }
 
